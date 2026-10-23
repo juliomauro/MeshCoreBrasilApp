@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# lusoapp — Dispatcher for platform-specific build scripts
+# meshcorebrasilapp — Dispatcher for platform-specific build scripts
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

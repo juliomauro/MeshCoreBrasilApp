@@ -19,7 +19,7 @@
 library;
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:lusoapp/transport/serial_transport.dart';
+import 'package:meshcorebrasilapp/transport/serial_transport.dart';
 
 void main() {
   // ---------------------------------------------------------------------------

@@ -4,7 +4,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:timezone/timezone.dart' as tz;
 
 import 'storage_service.dart';
 
@@ -24,17 +23,6 @@ class NotificationService {
   static const _androidChannelName = 'Mensagens MeshCore';
   static const _androidChannelDesc =
       'Notificacoes de mensagens privadas e de canal';
-
-  static const _plan333ChannelId = 'plan333_alerts';
-  static const _plan333ChannelName = 'Alertas Plano 3-3-3';
-  static const _plan333ChannelDesc =
-      'Lembretes das janelas de escuta do Plano 3-3-3';
-
-  // Notification IDs for Saturday Mesh 3-3-3 reminders.
-  static const _plan333Remind10Id = 1008; // 10 min before (20:50)
-  static const _plan333Remind5Id = 1009; //  5 min before (20:55)
-  // Lisbon timezone — correct for the Portuguese Plano 3-3-3.
-  static const _lisbon = 'Europe/Lisbon';
 
   final _plugin = FlutterLocalNotificationsPlugin();
   bool _initialized = false;
@@ -120,15 +108,6 @@ class NotificationService {
           _androidChannelId,
           _androidChannelName,
           description: _androidChannelDesc,
-          importance: Importance.high,
-          playSound: true,
-        ),
-      );
-      await android?.createNotificationChannel(
-        const AndroidNotificationChannel(
-          _plan333ChannelId,
-          _plan333ChannelName,
-          description: _plan333ChannelDesc,
           importance: Importance.high,
           playSound: true,
         ),
@@ -253,125 +232,6 @@ class NotificationService {
     );
   }
 
-  // ---------------------------------------------------------------------------
-  // Plan 3-3-3 scheduled alerts
-  // ---------------------------------------------------------------------------
-
-  // Platforms that support zonedSchedule (timed repeating notifications).
-  static bool get _supportsZonedSchedule =>
-      !kIsWeb &&
-      (defaultTargetPlatform == TargetPlatform.android ||
-          defaultTargetPlatform == TargetPlatform.iOS ||
-          defaultTargetPlatform == TargetPlatform.macOS);
-
-  /// Fire an immediate test notification to verify the notification channel.
-  /// Debug / diagnostic use only.
-  Future<String> showPlan333TestNotification() async {
-    if (!_initialized) return 'Serviço não inicializado';
-    if (kIsWeb) return 'Notificações não suportadas na web';
-
-    const androidDetails = AndroidNotificationDetails(
-      _plan333ChannelId,
-      _plan333ChannelName,
-      channelDescription: _plan333ChannelDesc,
-      importance: Importance.high,
-      priority: Priority.high,
-    );
-    const details = NotificationDetails(
-      android: androidDetails,
-      iOS: DarwinNotificationDetails(presentAlert: true, presentSound: true),
-      macOS: DarwinNotificationDetails(presentAlert: true, presentSound: true),
-    );
-
-    await _plugin.show(
-      1099,
-      'Mesh 3-3-3 — Teste',
-      'Notificação de teste. Sistema de alertas a funcionar!',
-      details,
-    );
-    return 'OK';
-  }
-
-  /// Returns how many Plan333 reminders are currently pending in the OS.
-  Future<int> pendingPlan333Count() async {
-    if (!_initialized || kIsWeb) return 0;
-    if (!_supportsZonedSchedule) return 0;
-    final all = await _plugin.pendingNotificationRequests();
-    return all
-        .where((n) => n.id == _plan333Remind10Id || n.id == _plan333Remind5Id)
-        .length;
-  }
-
-  /// Schedule 8 daily window alerts + 1 weekly Saturday training reminder.
-  /// Safe to call multiple times — cancels existing Plan333 notifications first.
-  Future<void> schedulePlan333Alerts() async {
-    if (!_initialized || kIsWeb) return;
-    // zonedSchedule is only available on Android, iOS, and macOS.
-    if (!_supportsZonedSchedule) return;
-
-    await cancelPlan333Alerts();
-
-    final location = tz.getLocation(_lisbon);
-
-    const androidDetails = AndroidNotificationDetails(
-      _plan333ChannelId,
-      _plan333ChannelName,
-      channelDescription: _plan333ChannelDesc,
-      importance: Importance.high,
-      priority: Priority.high,
-    );
-    const details = NotificationDetails(
-      android: androidDetails,
-      iOS: DarwinNotificationDetails(presentAlert: true, presentSound: true),
-      macOS: DarwinNotificationDetails(presentAlert: true, presentSound: true),
-    );
-
-    final now = tz.TZDateTime.now(location);
-
-    // Helper: next Saturday at a given hour:minute.
-    tz.TZDateTime nextSaturday(int hour, int minute) {
-      var t = tz.TZDateTime(
-        location,
-        now.year,
-        now.month,
-        now.day,
-        hour,
-        minute,
-      );
-      if (t.isBefore(now)) t = t.add(const Duration(days: 1));
-      while (t.weekday != DateTime.saturday) {
-        t = t.add(const Duration(days: 1));
-      }
-      return t;
-    }
-
-    // 10 min before Mesh 3-3-3 (20:50 Saturday)
-    await _plugin.zonedSchedule(
-      _plan333Remind10Id,
-      'Mesh 3-3-3 — em 10 minutos!',
-      'O evento semanal de sábado começa às 21:00.',
-      nextSaturday(20, 50),
-      details,
-      androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
-      matchDateTimeComponents: DateTimeComponents.dayOfWeekAndTime,
-      uiLocalNotificationDateInterpretation:
-          UILocalNotificationDateInterpretation.absoluteTime,
-    );
-
-    // 5 min before Mesh 3-3-3 (20:55 Saturday)
-    await _plugin.zonedSchedule(
-      _plan333Remind5Id,
-      'Mesh 3-3-3 — em 5 minutos!',
-      'Prepare o rádio para o evento semanal às 21:00.',
-      nextSaturday(20, 55),
-      details,
-      androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
-      matchDateTimeComponents: DateTimeComponents.dayOfWeekAndTime,
-      uiLocalNotificationDateInterpretation:
-          UILocalNotificationDateInterpretation.absoluteTime,
-    );
-  }
-
   /// Returns the payload string from the notification that launched the app
   /// (cold-start / killed-state tap), or null if the app was not launched via
   /// a notification.  Call this once during startup, after [init].
@@ -380,14 +240,6 @@ class NotificationService {
     final details = await _plugin.getNotificationAppLaunchDetails();
     if (details == null || !details.didNotificationLaunchApp) return null;
     return details.notificationResponse?.payload;
-  }
-
-  /// Cancel all Plan 3-3-3 scheduled notifications.
-  Future<void> cancelPlan333Alerts() async {
-    if (!_initialized || kIsWeb) return;
-    if (!_supportsZonedSchedule) return;
-    await _plugin.cancel(_plan333Remind10Id);
-    await _plugin.cancel(_plan333Remind5Id);
   }
 
   // ---------------------------------------------------------------------------
@@ -420,7 +272,7 @@ class NotificationService {
       return;
     }
     try {
-      const channel = MethodChannel('pt.meshcore.lusoapp/radio_service');
+      const channel = MethodChannel('br.meshcorebrasil.app/radio_service');
       await channel.invokeMethod('startRadioForeground', {
         'radioName': radioName,
       });
@@ -442,7 +294,7 @@ class NotificationService {
       return;
     }
     try {
-      const channel = MethodChannel('pt.meshcore.lusoapp/radio_service');
+      const channel = MethodChannel('br.meshcorebrasil.app/radio_service');
       await channel.invokeMethod('updateRadioForeground', {
         if (radioName != null) 'radioName': radioName,
         if (noiseFloor != null) 'noiseFloor': noiseFloor,
@@ -463,7 +315,7 @@ class NotificationService {
       return;
     }
     try {
-      const channel = MethodChannel('pt.meshcore.lusoapp/radio_service');
+      const channel = MethodChannel('br.meshcorebrasil.app/radio_service');
       await channel.invokeMethod('stopRadioForeground');
     } catch (e) {
       // Log but don't crash if the platform method fails

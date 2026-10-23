@@ -1,8 +1,8 @@
 import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:lusoapp/protocol/protocol.dart';
-import 'package:lusoapp/ui/screens/private_chat_screen.dart';
+import 'package:meshcorebrasilapp/protocol/protocol.dart';
+import 'package:meshcorebrasilapp/ui/screens/private_chat_screen.dart';
 
 void main() {
   ChatMessage outgoing({

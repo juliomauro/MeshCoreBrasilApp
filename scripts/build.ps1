@@ -1,4 +1,4 @@
-# lusoapp — Windows build script for CI and release packaging
+# meshcorebrasilapp — Windows build script for CI and release packaging
 param(
     [switch]$SkipTests,
     [switch]$ApkOnly,
@@ -120,7 +120,7 @@ flutter config --enable-linux-desktop >/dev/null
 $VersionLine = Select-String -Path "pubspec.yaml" -Pattern "^version:" | Select-Object -First 1
 $Version = ($VersionLine -split '\s+')[1].Trim("'", '"')
 
-Log "lusoapp v$Version - Release Build"
+Log "meshcorebrasilapp v$Version - Release Build"
 Log "================================="
 
 # Check Flutter
@@ -181,7 +181,7 @@ try {
 
         $WinOut = Join-Path $ProjectDir "build\windows\x64\runner\Release"
         if (Test-Path $WinOut) {
-            $archive = Join-Path $DistDir "lusoapp-${Version}-windows-x64.zip"
+            $archive = Join-Path $DistDir "meshcorebrasilapp-${Version}-windows-x64.zip"
             Compress-Archive -Path "$WinOut\*" -DestinationPath $archive -Force
             $size = (Get-Item $archive).Length / 1MB
             Log ("Windows archive: $archive ({0:N1} MB)" -f $size)
@@ -218,7 +218,7 @@ try {
 
         $WebOut = Join-Path $ProjectDir "build\web"
         if (Test-Path $WebOut) {
-            $archive = Join-Path $DistDir "lusoapp-${Version}-web.zip"
+            $archive = Join-Path $DistDir "meshcorebrasilapp-${Version}-web.zip"
             Compress-Archive -Path "$WebOut\*" -DestinationPath $archive -Force
             $size = (Get-Item $archive).Length / 1MB
             Log ("Web archive: $archive ({0:N1} MB)" -f $size)
@@ -235,7 +235,7 @@ try {
 
             $apk = Join-Path $ProjectDir "build\app\outputs\flutter-apk\app-release.apk"
             if (Test-Path $apk) {
-                $dest = Join-Path $DistDir "lusoapp-${Version}.apk"
+                $dest = Join-Path $DistDir "meshcorebrasilapp-${Version}.apk"
                 Copy-Item $apk $dest -Force
                 $size = (Get-Item $dest).Length / 1MB
                 Log ("APK: $dest ({0:N1} MB)" -f $size)
@@ -246,7 +246,7 @@ try {
 
             $aab = Join-Path $ProjectDir "build\app\outputs\bundle\release\app-release.aab"
             if (Test-Path $aab) {
-                $dest = Join-Path $DistDir "lusoapp-${Version}.aab"
+                $dest = Join-Path $DistDir "meshcorebrasilapp-${Version}.aab"
                 Copy-Item $aab $dest -Force
                 Log "AAB: $dest"
             }

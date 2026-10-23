@@ -70,7 +70,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   /// Returns the display title for known app sub-routes.
   String? _appSubTitle(BuildContext context, String path) {
     return switch (path) {
-      '/apps/plan333' => context.l10n.appsPlano333Title,
       '/apps/telemetry' => context.l10n.appsTelemetryTitle,
       '/apps/rxlog' => context.l10n.appsRxLogTitle,
       _ => null,
@@ -178,7 +177,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                         size: 24,
                       ),
                       const SizedBox(width: 8),
-                      Text(_safeUiText(selfName, fallback: 'LusoAPP')),
+                      Text(_safeUiText(selfName, fallback: 'MeshCore Brasil')),
                     ],
                   ),
           actions: [

@@ -477,7 +477,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get homeDisconnect => 'Desconectar';
 
   @override
-  String get homeExitTitle => '¿Salir de LusoAPP?';
+  String get homeExitTitle => '¿Salir de MeshCore Brasil?';
 
   @override
   String get homeExitContent =>
@@ -885,14 +885,14 @@ class AppLocalizationsEs extends AppLocalizations {
   String get settingsAbout => 'Acerca de';
 
   @override
-  String get settingsAppName => 'LusoAPP';
+  String get settingsAppName => 'MeshCore Brasil';
 
   @override
-  String get settingsAppSubtitle => 'MeshCore Portugal';
+  String get settingsAppSubtitle => 'MeshCore Brasil';
 
   @override
   String get settingsCredit =>
-      'Código fuente inicial creado por Paulo Pereira aka GZ7d0';
+      'Código fuente inicial creado por Paulo Pereira aka GZ7d0. Fork brasileño de lusoapp, de la Comunidad MeshCore Portugal (github.com/Meshcore-Portugal/lusoapp), adaptado para Brasil por la comunidad MeshCore Brasil.';
 
   @override
   String get settingsVersion => 'Versión';

@@ -2,7 +2,7 @@
 ///
 /// Supported release presets (`FEATURE_PRESET`):
 /// - `legacy` (default): preserves existing behaviour
-///   (all apps enabled except Topology and Event)
+///   (all apps enabled except Topology)
 /// - `minimal`: smaller public-facing set
 /// - `full`: enables all optional apps
 ///
@@ -17,12 +17,11 @@ library;
 
 enum AppFeature {
   topology,
-  plan333,
   telemetry,
   rxlog,
   noisefloor,
   dataexport,
-  event,
+  communityLinks,
 }
 
 final class FeatureToggles {
@@ -40,21 +39,15 @@ final class FeatureToggles {
   // Preset defaults (overridable by per-feature `FEATURE_APP_*` flags).
   // Topology is intentionally off by default for now.
   static const bool _defaultTopology = _isFullPreset;
-  static const bool _defaultPlan333 = true;
   static const bool _defaultTelemetry = true;
   static const bool _defaultRxLog = !_isMinimalPreset;
   static const bool _defaultNoiseFloor = !_isMinimalPreset;
   static const bool _defaultDataExport = !_isMinimalPreset;
-  static const bool _defaultEvent = _isFullPreset;
+  static const bool _defaultCommunityLinks = true;
 
   static const bool appTopology = bool.fromEnvironment(
     'FEATURE_APP_TOPOLOGY',
     defaultValue: _defaultTopology,
-  );
-
-  static const bool appPlan333 = bool.fromEnvironment(
-    'FEATURE_APP_PLAN333',
-    defaultValue: _defaultPlan333,
   );
 
   static const bool appTelemetry = bool.fromEnvironment(
@@ -77,18 +70,17 @@ final class FeatureToggles {
     defaultValue: _defaultDataExport,
   );
 
-  static const bool appEvent = bool.fromEnvironment(
-    'FEATURE_APP_EVENT',
-    defaultValue: _defaultEvent,
+  static const bool appCommunityLinks = bool.fromEnvironment(
+    'FEATURE_APP_COMMUNITY_LINKS',
+    defaultValue: _defaultCommunityLinks,
   );
 
   static bool isEnabled(AppFeature feature) => switch (feature) {
     AppFeature.topology => appTopology,
-    AppFeature.plan333 => appPlan333,
     AppFeature.telemetry => appTelemetry,
     AppFeature.rxlog => appRxLog,
     AppFeature.noisefloor => appNoiseFloor,
     AppFeature.dataexport => appDataExport,
-    AppFeature.event => appEvent,
+    AppFeature.communityLinks => appCommunityLinks,
   };
 }

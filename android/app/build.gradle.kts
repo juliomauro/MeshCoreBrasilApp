@@ -18,7 +18,7 @@ plugins {
 }
 
 android {
-    namespace = "pt.meshcore.lusoapp"
+    namespace = "br.meshcorebrasil.app"
     compileSdk = maxOf(flutter.compileSdkVersion, 37)
     // NDK r28+ compiles 16 KB ELF-aligned .so files by default (Google Play requirement since Nov 2025)
     ndkVersion = "28.2.13676358"
@@ -34,8 +34,7 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "pt.meshcore.lusoapp"
+        applicationId = "br.meshcorebrasil.app"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

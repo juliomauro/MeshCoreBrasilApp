@@ -826,7 +826,7 @@ class _ConnectScreenState extends ConsumerState<ConnectScreen> {
                               : const [],
                     ),
                     child: Image.asset(
-                      'assets/images/meshcore-pt-logo.webp',
+                      'assets/images/meshcore-brasil-logo.webp',
                       height: 120,
                     ),
                   ),
@@ -867,7 +867,7 @@ class _ConnectScreenState extends ConsumerState<ConnectScreen> {
               ),
               const SizedBox(height: 16),
               Text(
-                'MeshCore Portugal',
+                'MeshCore Brasil',
                 style: theme.textTheme.bodyLarge?.copyWith(
                   color: theme.colorScheme.onSurface.withAlpha(180),
                 ),

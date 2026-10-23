@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="pt.meshcore.lusoapp">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="br.meshcorebrasil.app">
 
     <!-- BLE scanning and connection — Android 12+ (API 31+) -->                                                                                                                                                                                                       
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN"
@@ -25,15 +25,12 @@
     <!-- Notifications — required for flutter_local_notifications on Android 13+ -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
-    <!-- Exact alarms — required for Plan 3-3-3 scheduled window reminders -->
-    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
-
     <!-- Foreground Service — required for persistent "Connected" notification to prevent Doze mode -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
 
     <application
-        android:label="LusoAPP"
+        android:label="MeshCore Brasil"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:enableOnBackInvokedCallback="false">

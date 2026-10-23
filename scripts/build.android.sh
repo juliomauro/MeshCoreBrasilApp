@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# lusoapp — Android build script
+# meshcorebrasilapp — Android build script
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -55,7 +55,7 @@ if ! command -v adb >/dev/null 2>&1 && [ -z "${ANDROID_HOME:-}" ] && [ -z "${AND
     exit 1
 fi
 
-log "lusoapp v$VERSION — Android $BUILD_MODE build"
+log "meshcorebrasilapp v$VERSION — Android $BUILD_MODE build"
 log "=========================================="
 
 log "Getting dependencies..."
@@ -74,7 +74,7 @@ flutter build apk "--$BUILD_MODE"
 
 APK="$BUILD_DIR/app/outputs/flutter-apk/app-${BUILD_MODE}.apk"
 if [ -f "$APK" ]; then
-    OUT_APK="$DIST_DIR/lusoapp-${VERSION}-android-${BUILD_MODE}.apk"
+    OUT_APK="$DIST_DIR/meshcorebrasilapp-${VERSION}-android-${BUILD_MODE}.apk"
     cp "$APK" "$OUT_APK"
     SIZE=$(du -h "$OUT_APK" | cut -f1)
     log "APK: $OUT_APK ($SIZE)"
@@ -89,7 +89,7 @@ if [ "$BUILD_MODE" = "release" ]; then
 
     AAB="$BUILD_DIR/app/outputs/bundle/release/app-release.aab"
     if [ -f "$AAB" ]; then
-        OUT_AAB="$DIST_DIR/lusoapp-${VERSION}-android-release.aab"
+        OUT_AAB="$DIST_DIR/meshcorebrasilapp-${VERSION}-android-release.aab"
         cp "$AAB" "$OUT_AAB"
         SIZE=$(du -h "$OUT_AAB" | cut -f1)
         log "AAB: $OUT_AAB ($SIZE)"

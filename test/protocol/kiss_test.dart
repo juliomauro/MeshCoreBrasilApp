@@ -1,7 +1,7 @@
 import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:lusoapp/protocol/kiss.dart';
+import 'package:meshcorebrasilapp/protocol/kiss.dart';
 
 void main() {
   group('Kiss', () {

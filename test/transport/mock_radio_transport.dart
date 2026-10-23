@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:typed_data';
 
-import 'package:lusoapp/transport/radio_transport.dart';
+import 'package:meshcorebrasilapp/transport/radio_transport.dart';
 
 /// A controllable [RadioTransport] test double.
 ///

@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map_tile_caching/flutter_map_tile_caching.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:timezone/data/latest_all.dart' as tz_data;
 
 import 'providers/radio_providers.dart';
 import 'providers/canned_messages_provider.dart';
@@ -12,7 +11,6 @@ import 'providers/sos_settings_provider.dart';
 import 'services/gps_sharing_service.dart';
 import 'transport/radio_transport.dart' show TransportState;
 import 'services/notification_service.dart';
-import 'services/plan333_service.dart';
 import 'services/sos_service.dart';
 import 'services/storage_service.dart';
 import 'services/widget_service.dart';
@@ -24,27 +22,24 @@ import 'ui/theme.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Timezone data required for Plan 3-3-3 scheduled notifications.
-  tz_data.initializeTimeZones();
-
   if (!kIsWeb) {
     await FMTCObjectBoxBackend().initialise();
     await const FMTCStore('mapStore').manage.create();
   }
 
-  runApp(const ProviderScope(child: McAppPt()));
+  runApp(const ProviderScope(child: McAppBr()));
 }
 
-class McAppPt extends ConsumerStatefulWidget {
-  const McAppPt({super.key});
+class McAppBr extends ConsumerStatefulWidget {
+  const McAppBr({super.key});
 
   @override
-  ConsumerState<McAppPt> createState() => _McAppPtState();
+  ConsumerState<McAppBr> createState() => _McAppBrState();
 }
 
 final _lifecycleObserver = AppLifecycleObserver();
 
-class _McAppPtState extends ConsumerState<McAppPt> {
+class _McAppBrState extends ConsumerState<McAppBr> {
   ProviderSubscription<DeviceInfo?>? _deviceInfoSub;
   ProviderSubscription<TransportState>? _connectionSub;
   bool _didShowPathHashMigrationModal = false;
@@ -181,17 +176,12 @@ class _McAppPtState extends ConsumerState<McAppPt> {
 
     if (mounted) {
       await ref.read(notificationSettingsProvider.notifier).loadFromStorage();
-      await ref.read(plan333EnabledProvider.notifier).loadFromStorage();
-      await ref.read(plan333ConfigProvider.notifier).loadFromStorage();
-      await ref.read(qslLogProvider.notifier).loadFromStorage();
       await ref.read(cannedMessagesProvider.notifier).loadFromStorage();
       await ref.read(gpsSharingProvider.notifier).loadFromStorage();
 
       // Restore SOS destination/template settings.
       await ref.read(sosSettingsProvider.notifier).loadFromStorage();
       await ref.read(mapHiddenContactsProvider.notifier).loadFromStorage();
-      // Eagerly initialize the auto-send notifier (starts background timer).
-      ref.read(plan333AutoSendProvider);
       // Eagerly initialize the GPS sharing service so its listeners attach
       // and the timer starts if the user previously enabled Auto mode.
       ref.read(gpsSharingServiceProvider);
@@ -423,7 +413,7 @@ class _McAppPtState extends ConsumerState<McAppPt> {
     final appTextScale = ref.watch(appTextScaleProvider);
 
     return MaterialApp.router(
-      title: 'LusoAPP',
+      title: 'MeshCore Brasil',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.build(brightness: Brightness.light, accent: accent),
       darkTheme: AppTheme.build(brightness: Brightness.dark, accent: accent),

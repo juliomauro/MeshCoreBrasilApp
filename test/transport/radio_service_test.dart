@@ -1,8 +1,8 @@
 import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:lusoapp/protocol/protocol.dart';
-import 'package:lusoapp/services/radio_service.dart';
+import 'package:meshcorebrasilapp/protocol/protocol.dart';
+import 'package:meshcorebrasilapp/services/radio_service.dart';
 
 import 'mock_radio_transport.dart';
 

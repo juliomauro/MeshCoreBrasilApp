@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "pt.meshcore" "\0"
-            VALUE "FileDescription", "LusoAPP" "\0"
+            VALUE "CompanyName", "br.meshcorebrasil" "\0"
+            VALUE "FileDescription", "MeshCore Brasil" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "lusoapp" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2026 pt.meshcore. All rights reserved." "\0"
-            VALUE "OriginalFilename", "mcapppt.exe" "\0"
-            VALUE "ProductName", "LusoAPP" "\0"
+            VALUE "InternalName", "meshcorebrasilapp" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2026 MeshCore Brasil. Based on lusoapp, Copyright (C) 2026 Portuguese MeshCore Community. All rights reserved." "\0"
+            VALUE "OriginalFilename", "meshcorebrasilapp.exe" "\0"
+            VALUE "ProductName", "MeshCore Brasil" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

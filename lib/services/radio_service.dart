@@ -38,7 +38,7 @@ class RadioService {
   bool get isConnected => _transport.isConnected;
 
   /// Connect to the radio and start the companion session.
-  Future<bool> connect({String appName = 'lusoapp'}) async {
+  Future<bool> connect({String appName = 'meshcorebrasilapp'}) async {
     final ok = await _transport.connect();
     if (!ok) return false;
 
@@ -215,7 +215,7 @@ class RadioService {
 
   /// Re-send APP_START so the radio replies with a fresh [SelfInfoResponse].
   /// Use this after operations that change the radio's identity (e.g. key import).
-  Future<void> requestSelfInfo({String appName = 'lusoapp'}) async {
+  Future<void> requestSelfInfo({String appName = 'meshcorebrasilapp'}) async {
     await _send(CompanionEncoder.appStart(appName));
   }
 

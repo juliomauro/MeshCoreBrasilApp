@@ -1,4 +1,4 @@
-package pt.meshcore.lusoapp
+package br.meshcorebrasil.app
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -27,9 +27,9 @@ class RadioForegroundService : Service() {
     companion object {
         const val NOTIFICATION_CHANNEL_ID = "meshcore_radio_connected"
         const val NOTIFICATION_ID = 9999
-        const val ACTION_START = "pt.meshcore.lusoapp.ACTION_START_RADIO_SERVICE"
-        const val ACTION_UPDATE = "pt.meshcore.lusoapp.ACTION_UPDATE_RADIO_SERVICE"
-        const val ACTION_STOP = "pt.meshcore.lusoapp.ACTION_STOP_RADIO_SERVICE"
+        const val ACTION_START = "br.meshcorebrasil.app.ACTION_START_RADIO_SERVICE"
+        const val ACTION_UPDATE = "br.meshcorebrasil.app.ACTION_UPDATE_RADIO_SERVICE"
+        const val ACTION_STOP = "br.meshcorebrasil.app.ACTION_STOP_RADIO_SERVICE"
         const val EXTRA_RADIO_NAME = "radio_name"
         const val EXTRA_NOISE_FLOOR = "noise_floor"
         const val EXTRA_LAST_RSSI = "last_rssi"

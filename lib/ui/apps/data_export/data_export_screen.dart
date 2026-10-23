@@ -164,7 +164,7 @@ class _DataExportScreenState extends ConsumerState<DataExportScreen> {
     );
     buf.writeln('<name>MeshCore Contacts</name>');
     buf.writeln(
-      '<description>Exported from lusoapp — MeshCore Portugal</description>',
+      '<description>Exported from MeshCore Brasil (fork of lusoapp by MeshCore Portugal)</description>',
     );
 
     // Style map: one icon per node type.

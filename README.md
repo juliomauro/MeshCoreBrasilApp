@@ -1,6 +1,14 @@
-# Companion App for the Portuguese MeshCore Community
+# Companion App for the Brazilian MeshCore Community
 
-**MeshCore PT (lusoapp)** is a Flutter companion app for [MeshCore](https://meshcore.net) radios, built by and for the Portuguese amateur radio and mesh networking community.
+> **This is a Brazilian fork.** MeshCoreBrasilApp is adapted from
+> [lusoapp](https://github.com/Meshcore-Portugal/lusoapp), built by and for
+> the Portuguese MeshCore community. All credit for the original app goes to
+> them — see [LICENSE](LICENSE) for the full attribution. This fork adapts it
+> for Brazil: 915 MHz / ANATEL radio preset instead of 433/868 MHz EU
+> presets, a Brazilian community links page instead of the PT-specific event
+> program and Plano 3-3-3 features, and (in progress) `pt-BR` localization.
+
+**MeshCoreBrasilApp** is a Flutter companion app for [MeshCore](https://meshcore.net) radios, built by and for the Brazilian amateur radio and mesh networking community.
 
 ## Features
 
@@ -10,8 +18,8 @@
 - **Contact Management** — View and manage discovered mesh nodes (chat, repeaters, rooms, sensors)
 - **BLE Connection** — Connect to ESP32 and nRF52 MeshCore radios via Bluetooth Low Energy
 - **Serial Connection** — Connect via USB OTG serial (115200 8N1)
-- **EU868 Presets** — Quick radio presets compliant with Portuguese/EU regulations
-- **Portuguese UI** — Full Portuguese (Portugal) interface
+- **915 MHz Preset** — Quick radio preset for the Brazilian ANATEL ISM band (see note below)
+- **Portuguese UI** — Full Portuguese interface (currently Portugal wording; `pt-BR` adaptation in progress)
 - **Map View** — Live GPS map of all contacts and mesh nodes (OpenStreetMap, no API key required)
 - **Offline Map** — Browse-cached tiles via `flutter_map_tile_caching`; tiles are stored automatically as you pan/zoom and served from disk when offline
 
@@ -29,8 +37,8 @@
 
 ```bash
 # Clone the repository
-git clone <repo-url> lusoapp
-cd lusoapp
+git clone <repo-url> meshcorebrasilapp
+cd meshcorebrasilapp
 
 # Get dependencies
 flutter pub get
@@ -84,7 +92,6 @@ lib/
     ├── screens/                 # Core screens (chat, contacts, settings…)
     │   └── parts/               # Per-screen widget parts
     └── apps/                    # Self-contained "apps" launched from the Apps tab
-        ├── plan333/
         ├── telemetry/
         ├── topology/
         ├── rx_log/
@@ -126,13 +133,27 @@ The app implements the **MeshCore Companion Radio Protocol v3**:
 
 ## Regulatory Information
 
-Default LoRa parameters comply with EU868 SRD regulations:
-- Frequency: 869.618 MHz
+The default LoRa preset targets the Brazilian ANATEL ISM band (915-928 MHz),
+using the convention adopted by the MeshCore Brasil community:
+- Frequency: 923.125 MHz
 - Bandwidth: 62.5 kHz
-- TX Power: 14 dBm ERP max
-- Duty Cycle: Users must respect 10% limits
+- Spreading Factor: 8
+- Coding Rate: 4/8
+- TX Power: 22 dBm
+- Path Hash Mode: after connecting, set it to **2 bytes** (max 32 hops) in
+  Radio Settings — this is a live per-device setting (firmware v1.14.0+),
+  not part of the band preset, so it must be set once per radio.
 
-Users are responsible for compliance with ANACOM regulations and amateur radio licence conditions.
+**Regulatory note (2026-10):** ANATEL's Ato nº 14158 (published 2026-10-01)
+revoked the 6 dB bandwidth exemption for spread-spectrum equipment in the
+915-928 MHz band (item 10.3.4), which affects LoRa-based hardware that
+doesn't meet the new 500 kHz minimum bandwidth requirement. This applies to
+new homologation requests submitted after 2026-10-06 — devices already
+homologated before that date (and their renewals) remain valid. If you're
+homologating new MeshCore-based hardware in Brazil, confirm current
+requirements with ANATEL/SCH before relying on this project.
+
+Users are responsible for compliance with ANATEL regulations and amateur radio licence conditions.
 
 ## Contributing
 

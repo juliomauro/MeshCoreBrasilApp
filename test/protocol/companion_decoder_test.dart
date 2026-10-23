@@ -2,8 +2,8 @@ import 'dart:convert';
 import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:lusoapp/protocol/commands.dart';
-import 'package:lusoapp/protocol/companion_decoder.dart';
+import 'package:meshcorebrasilapp/protocol/commands.dart';
+import 'package:meshcorebrasilapp/protocol/companion_decoder.dart';
 
 /// Build a uint32 LE byte list.
 Uint8List uint32LE(int value) {

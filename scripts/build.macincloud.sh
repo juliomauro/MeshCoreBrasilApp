@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# lusoapp — MacinCloud iOS build pipeline with icon generation
+# meshcorebrasilapp — MacinCloud iOS build pipeline with icon generation
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -155,7 +155,7 @@ if [[ -n "$EXPORT_OPTIONS_PLIST" ]] && [[ ! -f "$EXPORT_OPTIONS_PLIST" ]]; then
     exit 1
 fi
 
-log "lusoapp v$VERSION — MacinCloud iOS $BUILD_MODE pipeline"
+log "meshcorebrasilapp v$VERSION — MacinCloud iOS $BUILD_MODE pipeline"
 log "============================================================="
 
 if [[ "$RUN_CLEAN" == "true" ]]; then
@@ -207,7 +207,7 @@ if [[ "$BUILD_MODE" == "release" ]]; then
     IPA_PATH=$(find "$BUILD_DIR/ios/ipa" -maxdepth 1 -type f -name "*.ipa" | head -1 || true)
 
     if [[ -n "$IPA_PATH" ]] && [[ -f "$IPA_PATH" ]]; then
-        OUT_IPA="$DIST_DIR/lusoapp-${VERSION}-ios-release.ipa"
+        OUT_IPA="$DIST_DIR/meshcorebrasilapp-${VERSION}-ios-release.ipa"
         cp "$IPA_PATH" "$OUT_IPA"
         SIZE=$(du -h "$OUT_IPA" | cut -f1)
         log "IPA: $OUT_IPA ($SIZE)"
@@ -222,7 +222,7 @@ else
 
     APP_DIR="$BUILD_DIR/ios/iphoneos/Runner.app"
     if [[ -d "$APP_DIR" ]]; then
-        OUT_APP="$DIST_DIR/lusoapp-${VERSION}-ios-debug.app.tar.gz"
+        OUT_APP="$DIST_DIR/meshcorebrasilapp-${VERSION}-ios-debug.app.tar.gz"
         tar -czf "$OUT_APP" -C "$BUILD_DIR/ios/iphoneos" Runner.app
         SIZE=$(du -h "$OUT_APP" | cut -f1)
         log "App bundle archive: $OUT_APP ($SIZE)"

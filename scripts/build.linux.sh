@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# lusoapp — Linux desktop build script
+# meshcorebrasilapp — Linux desktop build script
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -55,7 +55,7 @@ if ! command -v flutter >/dev/null 2>&1; then
     exit 1
 fi
 
-log "lusoapp v$VERSION — Linux $BUILD_MODE build"
+log "meshcorebrasilapp v$VERSION — Linux $BUILD_MODE build"
 log "========================================"
 
 log "Getting dependencies..."
@@ -73,7 +73,7 @@ flutter build linux "--$BUILD_MODE"
 LINUX_OUT="$BUILD_DIR/linux/x64/$BUILD_MODE/bundle"
 if [ -d "$LINUX_OUT" ]; then
     mkdir -p "$DIST_DIR"
-    ARCHIVE="$DIST_DIR/lusoapp-${VERSION}-linux-x64-${BUILD_MODE}.tar.gz"
+    ARCHIVE="$DIST_DIR/meshcorebrasilapp-${VERSION}-linux-x64-${BUILD_MODE}.tar.gz"
     tar -czf "$ARCHIVE" -C "$BUILD_DIR/linux/x64/$BUILD_MODE" bundle
     SIZE=$(du -h "$ARCHIVE" | cut -f1)
     log "Linux archive: $ARCHIVE ($SIZE)"

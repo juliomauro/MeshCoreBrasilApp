@@ -1,7 +1,7 @@
 import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:lusoapp/protocol/models.dart';
+import 'package:meshcorebrasilapp/protocol/models.dart';
 
 void main() {
   group('Contact', () {

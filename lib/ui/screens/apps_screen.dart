@@ -22,15 +22,6 @@ class AppsScreen extends StatelessWidget {
       feature: AppFeature.topology,
     ),
     _AppEntry(
-      id: 'plan333',
-      title: 'Plano 3-3-3',
-      subtitle: 'Evento semanal MeshCore',
-      icon: Icons.crisis_alert,
-      color: Color(0xFFFF6B00),
-      route: '/apps/plan333',
-      feature: AppFeature.plan333,
-    ),
-    _AppEntry(
       id: 'telemetry',
       title: 'Telemetria',
       subtitle: 'Bateria, RF e contadores',
@@ -67,13 +58,13 @@ class AppsScreen extends StatelessWidget {
       feature: AppFeature.dataexport,
     ),
     _AppEntry(
-      id: 'event',
-      title: 'Summit Edition',
-      subtitle: 'Programa do Evento',
-      icon: Icons.event_note,
+      id: 'communityLinks',
+      title: 'Comunidade',
+      subtitle: 'Links úteis do MeshCore Brasil',
+      icon: Icons.groups_outlined,
       color: Color(0xFFFF8C00),
-      route: '/apps/event',
-      feature: AppFeature.event,
+      route: '/apps/community-links',
+      feature: AppFeature.communityLinks,
     ),
   ];
 

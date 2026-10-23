@@ -90,7 +90,7 @@ jobs:
         uses: r0adkll/upload-google-play@7f5b759879c088a86faf85d18779f7f14e79a086
         with:
           serviceAccountJsonPlainText: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
-          packageName: pt.meshcore.lusoapp
+          packageName: br.meshcorebrasil.app
           releaseFiles: build/dist/*.aab
           tracks: beta,alpha,internal
           status: completed
@@ -183,7 +183,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ needs.build_android.outputs.version }}
-          name: LusoApp v${{ needs.build_android.outputs.version }}
+          name: MeshCore Brasil v${{ needs.build_android.outputs.version }}
           prerelease: true
           generate_release_notes: true
           target_commitish: ${{ github.sha }}

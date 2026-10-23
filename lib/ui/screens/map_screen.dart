@@ -327,7 +327,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                   TileLayer(
                     urlTemplate:
                         'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-                    userAgentPackageName: 'pt.meshcore.lusoapp',
+                    userAgentPackageName: 'br.meshcorebrasil.app',
                     tileProvider: _tileProvider,
                     // On web the browser sets its own User-Agent header;
                     // a custom one would be blocked by CORS pre-flight.
@@ -335,7 +335,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                   const RichAttributionWidget(
                     showFlutterMapAttribution: false,
                     attributions: [
-                      TextSourceAttribution('MeshCore Portugal'),
+                      TextSourceAttribution('MeshCore Brasil'),
                       TextSourceAttribution('© OpenStreetMap contributors'),
                     ],
                   ),
@@ -446,7 +446,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                             vertical: 3,
                           ),
                           child: Text(
-                            'MeshCore Portugal | © OpenStreetMap contributors',
+                            'MeshCore Brasil | © OpenStreetMap contributors',
                             style: TextStyle(fontSize: 10, color: Colors.white),
                           ),
                         ),
@@ -906,6 +906,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
       final name = c.name.toUpperCase();
       if (name.contains('R4')) return Colors.green.shade700; // 433 MHz
       if (name.contains('R8')) return Colors.deepOrange.shade700; // 868 MHz
+      if (name.contains('R9')) return Colors.teal.shade700; // 915 MHz
       return Colors.orange.shade700; // unknown band
     }
     if (c.isRoom) return Colors.purple.shade600;

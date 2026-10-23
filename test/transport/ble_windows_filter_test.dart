@@ -12,7 +12,7 @@ library;
 
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:lusoapp/transport/ble_transport.dart';
+import 'package:meshcorebrasilapp/transport/ble_transport.dart';
 
 void main() {
   // Nordic UART Service UUID used by all MeshCore BLE radios.

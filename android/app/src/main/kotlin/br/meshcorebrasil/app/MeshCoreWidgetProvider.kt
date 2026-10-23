@@ -1,4 +1,4 @@
-package pt.meshcore.lusoapp
+package br.meshcorebrasil.app
 
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider

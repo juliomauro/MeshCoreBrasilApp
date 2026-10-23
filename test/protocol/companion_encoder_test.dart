@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:lusoapp/protocol/commands.dart';
-import 'package:lusoapp/protocol/companion_encoder.dart';
-import 'package:lusoapp/protocol/models.dart';
+import 'package:meshcorebrasilapp/protocol/commands.dart';
+import 'package:meshcorebrasilapp/protocol/companion_encoder.dart';
+import 'package:meshcorebrasilapp/protocol/models.dart';
 
 /// Read uint32 little-endian from frame at offset.
 int readUint32LE(Uint8List data, int offset) {

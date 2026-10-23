@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# lusoapp — Web build script
+# meshcorebrasilapp — Web build script
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -24,7 +24,7 @@ if ! command -v zip >/dev/null 2>&1; then
     exit 1
 fi
 
-log "lusoapp v$VERSION — Web Release Build"
+log "meshcorebrasilapp v$VERSION — Web Release Build"
 log "======================================"
 log "Base href: $BASE_HREF"
 
@@ -43,7 +43,7 @@ flutter build web --release --base-href "$BASE_HREF"
 WEB_OUT="$BUILD_DIR/web"
 if [ -d "$WEB_OUT" ]; then
     mkdir -p "$DIST_DIR"
-    ARCHIVE="$DIST_DIR/lusoapp-${VERSION}-web.zip"
+    ARCHIVE="$DIST_DIR/meshcorebrasilapp-${VERSION}-web.zip"
     rm -f "$ARCHIVE"
     (
         cd "$WEB_OUT"

@@ -2,8 +2,8 @@ import 'dart:typed_data';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:lusoapp/protocol/models.dart';
-import 'package:lusoapp/providers/radio_providers.dart';
+import 'package:meshcorebrasilapp/protocol/models.dart';
+import 'package:meshcorebrasilapp/providers/radio_providers.dart';
 
 void main() {
   group('ContactsNotifier.pruneStaleContacts', () {

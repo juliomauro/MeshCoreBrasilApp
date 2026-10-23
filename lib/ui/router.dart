@@ -10,13 +10,12 @@ import 'screens/home_screen.dart';
 import 'screens/channels_list_screen.dart';
 import 'screens/channel_chat_screen.dart';
 import 'screens/map_screen.dart';
-import 'apps/plan333/plan333_screen.dart';
 import 'screens/private_chat_screen.dart';
 import 'screens/radio_settings_screen.dart';
 import 'screens/contacts_screen.dart';
 import 'screens/room_screen.dart';
 import 'screens/settings_screen.dart';
-import 'screens/event_program_screen.dart';
+import 'screens/community_links_screen.dart';
 import 'apps/telemetry/telemetry_screen.dart';
 import 'screens/discover_contacts_screen.dart';
 import 'apps/noise_floor/noise_floor_screen.dart';
@@ -127,11 +126,6 @@ final routerProvider = Provider<GoRouter>((ref) {
                 path: '/apps',
                 builder: (context, state) => const AppsScreen(),
               ),
-              if (FeatureToggles.appPlan333)
-                GoRoute(
-                  path: '/apps/plan333',
-                  builder: (context, state) => const Plan333Screen(),
-                ),
               if (FeatureToggles.appTelemetry)
                 GoRoute(
                   path: '/apps/telemetry',
@@ -157,10 +151,10 @@ final routerProvider = Provider<GoRouter>((ref) {
                   path: '/apps/dataexport',
                   builder: (context, state) => const DataExportScreen(),
                 ),
-              if (FeatureToggles.appEvent)
+              if (FeatureToggles.appCommunityLinks)
                 GoRoute(
-                  path: '/apps/event',
-                  builder: (context, state) => const EventProgramScreen(),
+                  path: '/apps/community-links',
+                  builder: (context, state) => const CommunityLinksScreen(),
                 ),
             ],
           ),

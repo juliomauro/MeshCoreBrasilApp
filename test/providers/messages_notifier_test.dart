@@ -3,8 +3,8 @@ import 'dart:typed_data';
 import 'package:fake_async/fake_async.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:lusoapp/providers/radio_providers.dart';
-import 'package:lusoapp/protocol/protocol.dart';
+import 'package:meshcorebrasilapp/providers/radio_providers.dart';
+import 'package:meshcorebrasilapp/protocol/protocol.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {

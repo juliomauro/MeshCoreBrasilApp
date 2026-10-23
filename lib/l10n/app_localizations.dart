@@ -973,7 +973,7 @@ abstract class AppLocalizations {
   /// No description provided for @homeExitTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Sair da LusoAPP?'**
+  /// **'Sair da MeshCore Brasil?'**
   String get homeExitTitle;
 
   /// No description provided for @homeExitContent.
@@ -1723,7 +1723,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsAppName.
   ///
   /// In pt, this message translates to:
-  /// **'LusoAPP'**
+  /// **'MeshCore Brasil'**
   String get settingsAppName;
 
   /// No description provided for @settingsAppSubtitle.

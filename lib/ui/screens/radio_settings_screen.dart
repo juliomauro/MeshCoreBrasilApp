@@ -58,24 +58,17 @@ class _RadioSettingsScreenState extends ConsumerState<RadioSettingsScreen> {
     (label: '4/8', val: 8),
   ];
 
-  // 433.375 MHz and 869.618 MHz are the MeshCore community defaults for PT/EU.
+  // 923.125 MHz is the convention adopted by the MeshCore Brasil community
+  // for the ANATEL ISM band (915-928 MHz, Ato 14158/2026).
   // freqKHz is stored in MHz×1000 units (same as RadioConfig.frequencyHz).
   static const _bandPresets = [
     (
-      label: '433 MHz',
-      freqKHz: 433375,
+      label: '923 MHz',
+      freqKHz: 923125,
       bandwidthHz: 62500,
-      sf: 9,
-      cr: 6,
-      txPower: 10,
-    ),
-    (
-      label: '868 MHz',
-      freqKHz: 869618,
-      bandwidthHz: 62500,
-      sf: 7,
-      cr: 6,
-      txPower: 27,
+      sf: 8,
+      cr: 8,
+      txPower: 22,
     ),
   ];
 

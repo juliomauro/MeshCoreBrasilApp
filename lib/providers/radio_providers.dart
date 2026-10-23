@@ -10,7 +10,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../protocol/cayenne_lpp.dart';
 import '../protocol/protocol.dart';
 import '../services/notification_service.dart';
-import '../services/plan333_service.dart';
 import '../services/radio_service.dart';
 import '../services/storage_service.dart';
 import '../services/widget_service.dart';
