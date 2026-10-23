@@ -1,0 +1,78 @@
+name: Release APK (manual, sideload)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build_release_apk:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v5
+        with:
+          java-version: "17"
+          distribution: "temurin"
+          cache: gradle
+          cache-dependency-path: |
+            android/**/*.gradle*
+            android/**/gradle-wrapper.properties
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+          cache-key: flutter-${{ runner.os }}-${{ hashFiles('pubspec.yaml') }}
+
+      - name: Cache pub dependencies
+        uses: actions/cache@v5
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-releaseapk-${{ hashFiles('**/pubspec.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-releaseapk-
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Build release APK (arm64 only, smaller download)
+        run: flutter build apk --release --target-platform android-arm64
+
+      - name: Rename and tag
+        id: meta
+        run: |
+          VERSION=$(grep '^version:' pubspec.yaml | head -1 | awk '{print $2}' | tr -d "'\"" | cut -d'+' -f1)
+          TAG="v${VERSION}-build${{ github.run_number }}"
+          OUT="meshcorebrasilapp-${VERSION}-android-release-arm64.apk"
+          mkdir -p build/dist
+          cp build/app/outputs/flutter-apk/app-release.apk "build/dist/$OUT"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "filename=$OUT" >> "$GITHUB_OUTPUT"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.meta.outputs.tag }}
+          name: MeshCore Brasil v${{ steps.meta.outputs.version }} (build ${{ github.run_number }})
+          prerelease: true
+          generate_release_notes: true
+          target_commitish: ${{ github.sha }}
+          files: build/dist/${{ steps.meta.outputs.filename }}
+          body: |
+            Build de teste do MeshCoreBrasilApp, gerado automaticamente.
+
+            **Importante:** este APK é assinado com a chave de debug padrão
+            (não uma chave de release de verdade) — serve para instalar
+            direto no celular (sideload), mas ainda não é uma versão de
+            Play Store.
+
+            Arquitetura: arm64-v8a (compatível com praticamente todo
+            celular Android vendido desde ~2017).
