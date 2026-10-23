@@ -13,6 +13,15 @@ class AppsScreen extends StatelessWidget {
 
   static const _apps = [
     _AppEntry(
+      id: 'communityLinks',
+      title: 'Comunidade',
+      subtitle: 'Links úteis do MeshCore Brasil',
+      icon: Icons.groups_outlined,
+      color: Color(0xFF8B5CF6),
+      route: '/apps/community-links',
+      feature: AppFeature.communityLinks,
+    ),
+    _AppEntry(
       id: 'topology',
       title: 'Topologia',
       subtitle: 'Grafo da rede e cronologia',
@@ -51,20 +60,11 @@ class AppsScreen extends StatelessWidget {
     _AppEntry(
       id: 'dataexport',
       title: 'Exportar Dados',
-      subtitle: 'Contactos, mensagens e mapa',
+      subtitle: 'Contatos, mensagens e mapa',
       icon: Icons.upload_file_outlined,
       color: Color(0xFFF59E0B),
       route: '/apps/dataexport',
       feature: AppFeature.dataexport,
-    ),
-    _AppEntry(
-      id: 'communityLinks',
-      title: 'Comunidade',
-      subtitle: 'Links úteis do MeshCore Brasil',
-      icon: Icons.groups_outlined,
-      color: Color(0xFFFF8C00),
-      route: '/apps/community-links',
-      feature: AppFeature.communityLinks,
     ),
   ];
 

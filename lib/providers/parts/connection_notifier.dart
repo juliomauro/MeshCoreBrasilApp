@@ -86,7 +86,7 @@ class ConnectionNotifier extends StateNotifier<TransportState> {
     _ref.read(radioChannelsSnapshotProvider.notifier).state = {};
     _ref.read(contactsSyncedProvider.notifier).state = false;
     state = TransportState.connecting;
-    _setStep(0, 'A ligar via Bluetooth...');
+    _setStep(0, 'Conectando via Bluetooth...');
     try {
       final transport = BleTransport.fromDeviceId(deviceId);
       final service = RadioService(transport);
@@ -166,7 +166,7 @@ class ConnectionNotifier extends StateNotifier<TransportState> {
     _ref.read(radioChannelsSnapshotProvider.notifier).state = {};
     _ref.read(contactsSyncedProvider.notifier).state = false;
     state = TransportState.connecting;
-    _setStep(0, 'A ligar via USB série...');
+    _setStep(0, 'Conectando via USB serial...');
     try {
       final baseTransport = await SerialTransport.fromDeviceId(deviceId);
       if (baseTransport == null) {
@@ -275,7 +275,7 @@ class ConnectionNotifier extends StateNotifier<TransportState> {
     _ref.read(radioChannelsSnapshotProvider.notifier).state = {};
     _ref.read(contactsSyncedProvider.notifier).state = false;
     state = TransportState.connecting;
-    _setStep(0, 'A ligar via USB Web Serial...');
+    _setStep(0, 'Conectando via USB Web Serial...');
     try {
       // Look up the JS SerialPort object registered when the user selected the
       // port from the browser picker. Returns null if the app was restarted
@@ -529,7 +529,7 @@ class ConnectionNotifier extends StateNotifier<TransportState> {
     final reconnector = _lastReconnector;
     if (reconnector == null) return;
 
-    _setStep(0, 'App retomada. A verificar ligação...');
+    _setStep(0, 'App retomado. Verificando conexão...');
     state = TransportState.connecting;
     final ok = await reconnector();
     if (!ok && state != TransportState.connected) {
@@ -582,7 +582,7 @@ class ConnectionNotifier extends StateNotifier<TransportState> {
                 : backoffSeconds.last;
         _setStep(
           0,
-          'Ligação perdida. A reconectar em ${delaySec}s... (tentativa ${attempt + 1})',
+          'Conexão perdida. Reconectando em ${delaySec}s... (tentativa ${attempt + 1})',
         );
         state = TransportState.connecting;
         _pushWidget();
@@ -594,7 +594,7 @@ class ConnectionNotifier extends StateNotifier<TransportState> {
         if (!_ref.read(autoReconnectProvider)) break;
 
         attempt++;
-        _setStep(0, 'A reconectar... (tentativa $attempt)');
+        _setStep(0, 'Reconectando... (tentativa $attempt)');
 
         final ok = await reconnector();
         // reconnector sets state = connected and installs a fresh listener.
@@ -1172,7 +1172,7 @@ class ConnectionNotifier extends StateNotifier<TransportState> {
     //    Rather than a fixed 300 ms delay, we watch for the response and
     //    proceed as soon as it arrives (typically 50–100 ms over BLE).
     //    500 ms fallback ensures we still continue even if it never comes.
-    _setStep(1, 'A aguardar resposta do rádio...');
+    _setStep(1, 'Aguardando resposta do rádio...');
     await _sendAndWait(
       service,
       () async {}, // no command needed — just listen
@@ -1181,7 +1181,7 @@ class ConnectionNotifier extends StateNotifier<TransportState> {
     );
 
     // 1. Device info — we need maxChannels before requesting channels.
-    _setStep(2, 'A obter informação do dispositivo...');
+    _setStep(2, 'Obtendo informações do dispositivo...');
     final devResp = await _sendAndWait(
       service,
       () => service.requestDeviceInfo(),
@@ -1196,7 +1196,7 @@ class ConnectionNotifier extends StateNotifier<TransportState> {
     unawaited(service.requestStats(statsTypePackets).catchError((_) {}));
 
     // 3. Contacts — wait for the end-of-contacts marker.
-    _setStep(3, 'A sincronizar contactos...');
+    _setStep(3, 'Sincronizando contatos...');
     final contactsResp = await _sendAndWait(
       service,
       () => service.requestContacts(),
@@ -1219,7 +1219,7 @@ class ConnectionNotifier extends StateNotifier<TransportState> {
     //         contacts sync), waiting 500 ms per missing slot.
     //      e) Final explicit refresh so storage always reflects the authoritative
     //         complete set — not whatever the last intermediate save had.
-    _setStep(4, 'A sincronizar canais...');
+    _setStep(4, 'Sincronizando canais...');
     final maxChannels = service.deviceInfo?.maxChannels ?? 8;
     final receivedChannels = <int>{};
 

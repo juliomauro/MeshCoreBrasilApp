@@ -880,11 +880,21 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsAppName => 'MeshCore Brasil';
 
   @override
-  String get settingsAppSubtitle => 'MeshCore Brasil';
+  String get settingsAppSubtitle => 'App for MeshCore radios';
 
   @override
   String get settingsCredit =>
-      'Initial source code created by Paulo Pereira aka GZ7d0. Brazilian fork of lusoapp by the Portuguese MeshCore Community (github.com/Meshcore-Portugal/lusoapp), adapted for Brazil by the MeshCore Brasil community.';
+      'Original source code by Paulo Pereira aka GZ7d0';
+
+  @override
+  String get settingsForkNotice =>
+      'Brazilian fork of lusoapp by the Portuguese MeshCore Community, adapted by the MeshCore Brasil community.';
+
+  @override
+  String get settingsForkRepo => 'github.com/Meshcore-Portugal/lusoapp';
+
+  @override
+  String get settingsForkMaintainer => 'Brazil fork maintained by Oruam Oliuj';
 
   @override
   String get settingsVersion => 'Version';

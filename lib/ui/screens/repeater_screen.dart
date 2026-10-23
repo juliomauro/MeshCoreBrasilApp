@@ -175,11 +175,11 @@ class _RepeaterScreenState extends ConsumerState<RepeaterScreen> {
       if (r is LoginSuccessPush) {
         completer.complete(null);
       } else if (r is LoginFailPush) {
-        completer.complete('Falhou — verifique a palavra-passe');
+        completer.complete('Falhou — verifique a senha');
       } else if (r is ErrorResponse) {
         final msg =
             r.errorCode == 2
-                ? 'Contacto não encontrado no rádio — force um advert deste nó'
+                ? 'Contato não encontrado no rádio — force um advert deste nó'
                 : 'Erro do rádio (código ${r.errorCode})';
         completer.complete(msg);
       }
@@ -509,7 +509,7 @@ class _RepeaterScreenState extends ConsumerState<RepeaterScreen> {
                             )
                             : const Icon(Icons.login),
                     label: Text(
-                      _loginWaiting ? 'A ligar...' : l10n.contactsJoin,
+                      _loginWaiting ? 'Conectando...' : l10n.contactsJoin,
                     ),
                   ),
                   if (stats == null) ...[
@@ -1023,7 +1023,6 @@ class _RepeaterScreenState extends ConsumerState<RepeaterScreen> {
               ),
               FilledButton(
                 onPressed: () => Navigator.pop(ctx, true),
-                style: FilledButton.styleFrom(backgroundColor: Colors.orange),
                 child: Text(l10n.contactsStartOTA),
               ),
             ],

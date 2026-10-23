@@ -380,7 +380,7 @@ class _McAppBrState extends ConsumerState<McAppBr> {
               messenger?.showSnackBar(
                 const SnackBar(
                   content: Text(
-                    '🆘 Contacto SOS não configurado/encontrado — abre Definições',
+                    '🆘 Contato SOS não configurado/encontrado — abra Configurações',
                   ),
                   duration: Duration(seconds: 3),
                 ),

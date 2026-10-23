@@ -1021,8 +1021,8 @@ class _ContactTile extends ConsumerWidget {
       SnackBar(
         content: Text(
           enable
-              ? 'Partilha GPS privada activada para ${contact.displayName}.'
-              : 'Partilha GPS privada desactivada para ${contact.displayName}.',
+              ? 'Compartilhamento de GPS privado ativado para ${contact.displayName}.'
+              : 'Compartilhamento de GPS privado desativado para ${contact.displayName}.',
         ),
       ),
     );
@@ -1193,11 +1193,11 @@ class _ContactTile extends ConsumerWidget {
                     ),
                     title: Text(
                       contact.allowsPrivateLocationOnRequest
-                          ? 'Desactivar partilha GPS privada'
-                          : 'Activar partilha GPS privada',
+                          ? 'Desativar compartilhamento de GPS privado'
+                          : 'Ativar compartilhamento de GPS privado',
                     ),
                     subtitle: const Text(
-                      'Permite a este contacto pedir a tua localização on-demand, sem beacon público.',
+                      'Permite que este contato peça a sua localização sob demanda, sem beacon público.',
                     ),
                     onTap: () {
                       Navigator.pop(ctx);
@@ -1462,7 +1462,7 @@ class _AddContactSheetState extends State<_AddContactSheet> {
     final raw = await Navigator.of(context).push<String>(
       MaterialPageRoute(
         fullscreenDialog: true,
-        builder: (_) => const QrScannerScreen(title: 'Ler QR de Contacto'),
+        builder: (_) => const QrScannerScreen(title: 'Ler QR de Contato'),
       ),
     );
     if (raw == null || !mounted) return;
@@ -1483,7 +1483,7 @@ class _AddContactSheetState extends State<_AddContactSheet> {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
             content: Text(
-              'QR de canal detectado. Use o ecrã de Canais para o adicionar.',
+              'QR de canal detectado. Use a tela de Canais para adicioná-lo.',
             ),
           ),
         );
@@ -1504,7 +1504,7 @@ class _AddContactSheetState extends State<_AddContactSheet> {
       final pubKey = _parsePublicKey(_pubKeyCtrl.text.trim());
       _pubKeyError =
           pubKey == null
-              ? 'Introduza 64 caracteres hexadecimais (32 bytes)'
+              ? 'Digite 64 caracteres hexadecimais (32 bytes)'
               : null;
       _nameError =
           _nameCtrl.text.trim().isEmpty ? 'O nome é obrigatório' : null;
@@ -1767,7 +1767,7 @@ class _ContactQrDialogState extends State<_ContactQrDialog> {
         ShareParams(
           files: [xFile],
           text: widget.uri,
-          subject: 'Contacto MeshCore: ${widget.displayName}',
+          subject: 'Contato MeshCore: ${widget.displayName}',
         ),
       );
     } finally {
@@ -1781,7 +1781,7 @@ class _ContactQrDialogState extends State<_ContactQrDialog> {
       await SharePlus.instance.share(
         ShareParams(
           text: widget.uri,
-          subject: 'Contacto MeshCore: ${widget.displayName}',
+          subject: 'Contato MeshCore: ${widget.displayName}',
         ),
       );
     } finally {

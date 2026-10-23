@@ -54,7 +54,7 @@ class _ContactPathSheetState extends ConsumerState<ContactPathSheet> {
       } else if (r is ErrorResponse) {
         final msg =
             r.errorCode == 2
-                ? 'Contacto não encontrado no rádio'
+                ? 'Contato não encontrado no rádio'
                 : 'Erro do rádio (código ${r.errorCode})';
         completer.complete(msg);
       }
@@ -132,7 +132,7 @@ class _ContactPathSheetState extends ConsumerState<ContactPathSheet> {
       } else if (r is ErrorResponse) {
         final msg =
             r.errorCode == 2
-                ? 'Contacto não encontrado no rádio'
+                ? 'Contato não encontrado no rádio'
                 : 'Erro do rádio (código ${r.errorCode})';
         completer.complete('__error__$msg');
       }

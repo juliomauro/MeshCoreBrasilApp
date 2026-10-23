@@ -85,12 +85,12 @@ List<CannedMessage> _defaultLibrary() => [
   const CannedMessage(id: 'ok', text: 'Estou OK ✅', label: 'OK'),
   const CannedMessage(
     id: 'qth',
-    text: 'QTH? Qual a tua localização?',
+    text: 'QTH? Qual é a sua localização?',
     label: 'QTH?',
   ),
   const CannedMessage(
     id: 'eta',
-    text: 'ETA: a chegar em ~10 min',
+    text: 'ETA: chegando em ~10 min',
     label: 'ETA 10 min',
   ),
 ];

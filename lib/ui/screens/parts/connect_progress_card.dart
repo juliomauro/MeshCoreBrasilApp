@@ -30,10 +30,10 @@ class _ConnectingCard extends StatelessWidget {
   final VoidCallback onCancel;
 
   static const _stepLabels = [
-    'A ligar...',
-    'A aguardar rádio...',
+    'Conectando...',
+    'Aguardando rádio...',
     'Informação do dispositivo',
-    'Contactos',
+    'Contatos',
     'Canais',
     'Concluído',
   ];
@@ -67,7 +67,7 @@ class _ConnectingCard extends StatelessWidget {
                   child: Text(
                     _safeUiName(
                       target?.device.name,
-                      fallback: target?.device.id ?? 'A ligar...',
+                      fallback: target?.device.id ?? 'Conectando...',
                     ),
                     style: theme.textTheme.titleMedium?.copyWith(
                       fontWeight: FontWeight.bold,
@@ -90,7 +90,7 @@ class _ConnectingCard extends StatelessWidget {
             AnimatedSwitcher(
               duration: const Duration(milliseconds: 300),
               child: Text(
-                stepLabel.isNotEmpty ? stepLabel : 'A ligar...',
+                stepLabel.isNotEmpty ? stepLabel : 'Conectando...',
                 key: ValueKey(stepLabel),
                 style: theme.textTheme.bodyMedium?.copyWith(
                   color: theme.colorScheme.onSurface.withAlpha(180),

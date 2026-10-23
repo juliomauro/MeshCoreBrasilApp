@@ -753,8 +753,12 @@ class _MessageBubble extends ConsumerWidget {
                           final line = _buildPathLine(
                             context: context,
                             theme: theme,
-                            subtleColor: theme.colorScheme.onPrimaryContainer
-                                .withAlpha(160),
+                            // Matches the neutral/discreet styling the
+                            // incoming-message path chip already uses below,
+                            // instead of tinting it with the accent colour.
+                            subtleColor: theme.colorScheme.onPrimary.withAlpha(
+                              150,
+                            ),
                             isOutgoing: true,
                             heardCount: message.heardCount,
                             pathLen: message.pathLen,

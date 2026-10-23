@@ -306,9 +306,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                   const SizedBox(height: 12),
                   ListTile(
                     title: Text(context.l10n.settingsAppName),
-                    subtitle: Text(
-                      '${context.l10n.settingsAppSubtitle}\n${context.l10n.settingsCredit}',
-                    ),
+                    subtitle: Text(context.l10n.settingsAppSubtitle),
                   ),
                   ListTile(
                     title: Text(context.l10n.settingsVersion),
@@ -321,6 +319,35 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                   ListTile(
                     title: Text(context.l10n.settingsLicense),
                     subtitle: Text(context.l10n.settingsLicenseMIT),
+                  ),
+                  const Divider(height: 24),
+                  Text(
+                    context.l10n.settingsCredit,
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: theme.colorScheme.onSurfaceVariant,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    context.l10n.settingsForkNotice,
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: theme.colorScheme.onSurfaceVariant,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    context.l10n.settingsForkRepo,
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: theme.colorScheme.primary,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    context.l10n.settingsForkMaintainer,
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: theme.colorScheme.onSurfaceVariant,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
                 ],
               ),

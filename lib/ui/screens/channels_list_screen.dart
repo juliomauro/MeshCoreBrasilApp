@@ -395,7 +395,7 @@ class _ChannelsListScreenState extends ConsumerState<ChannelsListScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
             content: Text(
-              'QR de contacto detectado. Use o ecrã de Contactos para o adicionar.',
+              'QR de contato detectado. Use a tela de Contatos para adicioná-lo.',
             ),
           ),
         );

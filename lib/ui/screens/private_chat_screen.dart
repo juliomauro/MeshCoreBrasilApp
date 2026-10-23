@@ -75,7 +75,7 @@ class _PrivateChatScreenState extends ConsumerState<PrivateChatScreen> {
         _replyingTo != null ? _findContact(ref.read(contactsProvider)) : null;
     final replyPrefix =
         _replyingTo != null
-            ? '@[${replyContact?.displayName ?? 'Contacto'}] '
+            ? '@[${replyContact?.displayName ?? 'Contato'}] '
             : '';
     final fullText = '$replyPrefix$text';
 
@@ -234,7 +234,7 @@ class _PrivateChatScreenState extends ConsumerState<PrivateChatScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            contact?.displayName ?? 'Contacto',
+                            contact?.displayName ?? 'Contato',
                             style: theme.textTheme.titleMedium?.copyWith(
                               fontWeight: FontWeight.bold,
                             ),
@@ -881,7 +881,7 @@ class _ReplyStrip extends StatelessWidget {
     final senderLabel =
         message.isOutgoing
             ? '@[Você]'
-            : '@[${message.senderName ?? 'Contacto'}]';
+            : '@[${message.senderName ?? 'Contato'}]';
     return Container(
       margin: const EdgeInsets.only(bottom: 4),
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),

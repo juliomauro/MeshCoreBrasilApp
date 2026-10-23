@@ -339,7 +339,7 @@ class _ConnectScreenState extends ConsumerState<ConnectScreen> {
                 'Permissões Bluetooth necessárias para procurar dispositivos.',
               ),
               action: SnackBarAction(
-                label: 'Definições',
+                label: 'Configurações',
                 onPressed: openAppSettings,
               ),
             ),
@@ -1077,7 +1077,7 @@ class _ConnectScreenState extends ConsumerState<ConnectScreen> {
                           )
                           : const Icon(Icons.search),
                   label: Text(
-                    _scanning ? 'A procurar...' : 'Procurar Dispositivos',
+                    _scanning ? 'Procurando...' : 'Procurar Dispositivos',
                   ),
                 ),
                 if (kIsWeb) ...[
@@ -1128,7 +1128,7 @@ class _ConnectScreenState extends ConsumerState<ConnectScreen> {
                           ? Center(
                             child: Text(
                               _scanning
-                                  ? 'A procurar rádios MeshCore...'
+                                  ? 'Procurando rádios MeshCore...'
                                   : 'Toque em "Procurar" para encontrar dispositivos',
                               textAlign: TextAlign.center,
                               style: theme.textTheme.bodyMedium?.copyWith(

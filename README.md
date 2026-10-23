@@ -1,29 +1,71 @@
-# Companion App for the Brazilian MeshCore Community
+# MeshCore Brasil — App Companion
 
-> **This is a Brazilian fork.** MeshCoreBrasilApp is adapted from
-> [lusoapp](https://github.com/Meshcore-Portugal/lusoapp), built by and for
-> the Portuguese MeshCore community. All credit for the original app goes to
-> them — see [LICENSE](LICENSE) for the full attribution. This fork adapts it
-> for Brazil: 915 MHz / ANATEL radio preset instead of 433/868 MHz EU
-> presets, a Brazilian community links page instead of the PT-specific event
-> program and Plano 3-3-3 features, and (in progress) `pt-BR` localization.
+> **Este é um fork brasileiro.** O MeshCoreBrasilApp é adaptado do
+> [lusoapp](https://github.com/Meshcore-Portugal/lusoapp), feito pela e para
+> a comunidade portuguesa do MeshCore. Todo o crédito pelo app original é
+> deles — veja a [LICENSE](LICENSE) para a atribuição completa. Este fork
+> adapta o app para o Brasil: preset de rádio 915 MHz / ANATEL em vez dos
+> presets 433/868 MHz da UE, uma página de comunidade brasileira no lugar do
+> programa de evento e do recurso Plano 3-3-3 (específicos de Portugal), e
+> interface totalmente traduzida para o português do Brasil.
 
-**MeshCoreBrasilApp** is a Flutter companion app for [MeshCore](https://meshcore.net) radios, built by and for the Brazilian amateur radio and mesh networking community.
+**MeshCore** é um sistema de comunicação em malha (mesh) via LoRa:
+descentralizado, seguro e de baixo custo. Com ele você monta sua própria
+rede de mensagens criptografadas de longo alcance, que continua funcionando
+mesmo quando Wi-Fi, celular ou Starlink caem. *"A comunicação não pode
+falhar."*
+
+**MeshCoreBrasilApp** é o aplicativo companion (Flutter) para rádios
+MeshCore, feito pela e para a comunidade brasileira de radioamadorismo e
+redes mesh.
+
+### Para que serve
+
+- Radioamadorismo
+- Áreas remotas (sítios, trilhas, regiões isoladas)
+- Operações de resgate
+- Comunidades locais
+- Monitoramento de sensores (temperatura, umidade, qualidade do ar)
+- Equipes de apoio em eventos
+
+### Como entrar na rede
+
+1. **Compre um dispositivo LoRa compatível** — cada participante precisa de
+   um nó companion para entrar na malha.
+2. **Instale este app** no celular (ou use a [versão web](https://app.meshcore.nz/)
+   ou um dispositivo standalone).
+3. **Grave o firmware** no dispositivo usando o
+   [Flasher da comunidade](https://meshcore.com.br/flasher/).
+4. **Adicione repetidores** em pontos estratégicos pra estender a cobertura.
+
+### Comunidade MeshCore Brasil
+
+- Site: [meshcore.com.br](https://meshcore.com.br/)
+- Telegram: [t.me/meshcorebrasil](https://telegram.me/meshcorebrasil)
+- YouTube: [@MeshCoreBrasil](https://www.youtube.com/@MeshCoreBrasil)
+- Mapa da rede: [meshcore.com.br/mapa](https://meshcore.com.br/mapa/)
+- Ferramentas da comunidade: [MeshMapper](https://meshcore.com.br/meshmapper/),
+  [CoreScope](https://meshcore.com.br/corescope/),
+  [Gerador de Nomes para Repetidores](https://meshcore.com.br/gerador-de-nomes-para-repetidores-meshcore/)
+- Projeto MeshCore oficial (firmware/protocolo):
+  [github.com/meshcore-dev/MeshCore](https://github.com/meshcore-dev/MeshCore)
+
+Esses mesmos links estão dentro do app, na aba **Apps → Comunidade**.
 
 ## Features
 
-- **Channel Messaging** — Send and receive messages on MeshCore channels
-- **Private Chat** — End-to-end encrypted 1:1 messaging via Ed25519/X25519
-- **Radio Configuration** — Full LoRa parameter control (frequency, bandwidth, SF, CR, TX power)
-- **Contact Management** — View and manage discovered mesh nodes (chat, repeaters, rooms, sensors)
-- **BLE Connection** — Connect to ESP32 and nRF52 MeshCore radios via Bluetooth Low Energy
-- **Serial Connection** — Connect via USB OTG serial (115200 8N1)
-- **915 MHz Preset** — Quick radio preset for the Brazilian ANATEL ISM band (see note below)
-- **Portuguese UI** — Full Portuguese interface (currently Portugal wording; `pt-BR` adaptation in progress)
-- **Map View** — Live GPS map of all contacts and mesh nodes (OpenStreetMap, no API key required)
-- **Offline Map** — Browse-cached tiles via `flutter_map_tile_caching`; tiles are stored automatically as you pan/zoom and served from disk when offline
+- **Mensagens por Canal** — Envie e receba mensagens nos canais do MeshCore
+- **Chat Privado** — Mensagens 1:1 criptografadas ponta a ponta via Ed25519/X25519
+- **Configuração de Rádio** — Controle completo dos parâmetros LoRa (frequência, largura de banda, SF, CR, potência)
+- **Gerenciamento de Contatos** — Veja e gerencie os nós descobertos na malha (chat, repetidores, salas, sensores)
+- **Conexão BLE** — Conecte a rádios MeshCore ESP32 e nRF52 via Bluetooth Low Energy
+- **Conexão Serial** — Conecte via serial USB OTG (115200 8N1)
+- **Preset 915 MHz** — Preset de rádio pronto para a faixa ISM da ANATEL (veja a nota abaixo)
+- **Interface 100% em português do Brasil**
+- **Mapa** — Mapa GPS ao vivo de todos os contatos e nós da malha (OpenStreetMap, sem precisar de API key)
+- **Mapa Offline** — Cache de tiles via `flutter_map_tile_caching`; os tiles são salvos automaticamente enquanto você navega e servidos do disco quando offline
 
-> **Note on offline map caching:** Tile caching is purely browse-based — tiles are saved as you explore the map while online and replayed when offline. There is no "download this area" bulk pre-download feature. This is intentional: OSM's tile server [policy](https://operations.osmfoundation.org/policies/tiles/) forbids bulk pre-downloading of regions.
+> **Nota sobre o cache offline do mapa:** o cache é só baseado em navegação — os tiles são salvos enquanto você explora o mapa online e reproduzidos offline. Não existe um recurso de "baixar esta área" em lote. Isso é intencional: a [política](https://operations.osmfoundation.org/policies/tiles/) dos servidores de tiles do OSM proíbe pré-download em massa de regiões.
 
 ## Quick Start
 
@@ -163,7 +205,7 @@ Contributions are welcome! Please see the [ROADMAP.md](ROADMAP.md) for planned f
 
 For build-time app enable/disable presets and per-feature overrides, see:
 - [docs/feature-toggles.md](docs/feature-toggles.md) (English)
-- [docs/feature-toggles.pt-PT.md](docs/feature-toggles.pt-PT.md) (Portuguese - Portugal)
+- [docs/feature-toggles.pt-PT.md](docs/feature-toggles.pt-PT.md) (Portuguese — inherited from upstream, still Portugal wording; a pt-BR version is pending)
 
 ## Translations
 
@@ -173,7 +215,7 @@ The app uses Flutter's built-in `flutter_localizations` / `intl` ARB pipeline.
 
 ```
 lib/l10n/
-├── app_pt.arb                  ← Template (source of truth, Portuguese PT)
+├── app_pt.arb                  ← Template (source of truth, Portuguese — Brazil wording)
 ├── app_en.arb                  ← English translation
 ├── app_es.arb                  ← Spanish translation
 ├── app_localizations.dart      ← Generated — do NOT edit by hand

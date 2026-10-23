@@ -85,7 +85,7 @@ class _ChannelQrDialogState extends State<_ChannelQrDialog> {
             ),
             const SizedBox(height: 4),
             Text(
-              'Partilhe este QR Code para dar acesso ao canal',
+              'Compartilhe este QR Code para dar acesso ao canal',
               textAlign: TextAlign.center,
               style: theme.textTheme.bodySmall,
             ),

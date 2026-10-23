@@ -82,9 +82,9 @@ class _EditChannelSheetState extends ConsumerState<_EditChannelSheet> {
             title: Text(context.l10n.channelsRemovePublicTitle),
             content: const Text(
               'Está prestes a remover o Canal Público.\n\n'
-              'Este é o canal principal partilhado por toda a comunidade MeshCore. '
-              'Sem ele não poderá receber ou enviar mensagens públicas.\n\n'
-              'Tem mesmo a certeza?',
+              'Este é o canal principal compartilhado por toda a comunidade MeshCore. '
+              'Sem ele você não vai conseguir receber ou enviar mensagens públicas.\n\n'
+              'Tem certeza mesmo?',
             ),
             actions: [
               TextButton(
@@ -287,7 +287,7 @@ class _EditChannelSheetState extends ConsumerState<_EditChannelSheet> {
                               child: CircularProgressIndicator(strokeWidth: 2),
                             )
                             : const Icon(Icons.save),
-                    label: Text(_saving ? 'A guardar...' : 'Guardar'),
+                    label: Text(_saving ? 'Salvando...' : 'Salvar'),
                   ),
                 ),
               ],

@@ -27,7 +27,7 @@ class _TypePickerSheet extends StatelessWidget {
             _TypeOption(
               icon: Icons.lock_outline,
               title: 'Entrar num Canal Privado',
-              subtitle: 'Introduza manualmente uma chave secreta.',
+              subtitle: 'Digite manualmente uma chave secreta.',
               onTap: () => onTypeSelected(_ChannelType.privateJoin),
             ),
             _TypeOption(
@@ -214,7 +214,7 @@ class _CreateChannelSheetState extends State<_CreateChannelSheet> {
       _nameError = name.isEmpty ? 'O nome é obrigatório' : null;
       _secretError =
           widget.type == _ChannelType.privateJoin && secret == null
-              ? 'Introduza 32 caracteres hexadecimais (16 bytes)'
+              ? 'Digite 32 caracteres hexadecimais (16 bytes)'
               : null;
     });
 
@@ -381,7 +381,7 @@ class _CreateChannelSheetState extends State<_CreateChannelSheet> {
                         child: CircularProgressIndicator(strokeWidth: 2),
                       )
                       : const Icon(Icons.save),
-              label: Text(_saving ? 'A guardar...' : 'Guardar'),
+              label: Text(_saving ? 'Salvando...' : 'Salvar'),
             ),
             const SizedBox(height: 8),
           ],
@@ -410,9 +410,9 @@ class _CreateChannelSheetState extends State<_CreateChannelSheet> {
     _ChannelType.hashtag =>
       'Canal público por tópico. A chave é derivada automaticamente do nome.',
     _ChannelType.privateCreate =>
-      'Canal privado com chave aleatória. Partilhe o QR Code para convidar.',
+      'Canal privado com chave aleatória. Compartilhe o QR Code para convidar.',
     _ChannelType.privateJoin =>
-      'Introduza a chave secreta de um canal privado existente.',
+      'Digite a chave secreta de um canal privado existente.',
   };
 
   String _nameLabelForType(BuildContext context, _ChannelType t) => switch (t) {

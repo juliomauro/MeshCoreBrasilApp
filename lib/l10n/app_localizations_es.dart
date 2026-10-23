@@ -888,11 +888,22 @@ class AppLocalizationsEs extends AppLocalizations {
   String get settingsAppName => 'MeshCore Brasil';
 
   @override
-  String get settingsAppSubtitle => 'MeshCore Brasil';
+  String get settingsAppSubtitle => 'App para radios MeshCore';
 
   @override
   String get settingsCredit =>
-      'Código fuente inicial creado por Paulo Pereira aka GZ7d0. Fork brasileño de lusoapp, de la Comunidad MeshCore Portugal (github.com/Meshcore-Portugal/lusoapp), adaptado para Brasil por la comunidad MeshCore Brasil.';
+      'Código fuente original por Paulo Pereira aka GZ7d0';
+
+  @override
+  String get settingsForkNotice =>
+      'Fork brasileño de lusoapp, de la Comunidad MeshCore Portugal, adaptado por la comunidad MeshCore Brasil.';
+
+  @override
+  String get settingsForkRepo => 'github.com/Meshcore-Portugal/lusoapp';
+
+  @override
+  String get settingsForkMaintainer =>
+      'Fork brasileño mantenido por Oruam Oliuj';
 
   @override
   String get settingsVersion => 'Versión';
@@ -1646,14 +1657,14 @@ class AppLocalizationsEs extends AppLocalizations {
       'Los contactos aparecen mientras transmiten en la red';
 
   @override
-  String get discoverCleanTooltip => 'Limpar contactos só locais';
+  String get discoverCleanTooltip => 'Limpar contatos só locais';
 
   @override
-  String get discoverCleanSheetTitle => 'Limpar contactos só locais';
+  String get discoverCleanSheetTitle => 'Limpar contatos só locais';
 
   @override
   String get discoverCleanSheetSubtitle =>
-      'Escolhe quais contactos descobertos remover. Os contactos guardados no rádio são sempre mantidos.';
+      'Escolha quais contatos descobertos remover. Os contatos salvos no rádio são sempre mantidos.';
 
   @override
   String get discoverCleanOption48h => 'Não ouvidos há 48 horas';
@@ -1668,33 +1679,33 @@ class AppLocalizationsEs extends AppLocalizations {
   String get discoverCleanOptionNever => 'Nunca ouvidos (sem advert)';
 
   @override
-  String get discoverCleanOptionAll => 'Todos os contactos só locais';
+  String get discoverCleanOptionAll => 'Todos os contatos só locais';
 
   @override
-  String get discoverCleanTitle => 'Limpar contactos descobertos?';
+  String get discoverCleanTitle => 'Limpar contatos descobertos?';
 
   @override
   String discoverCleanBody(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: '$n contactos',
-      one: '1 contacto',
+      other: '$n contatos',
+      one: '1 contato',
     );
-    return 'Vai remover $_temp0 que não estão guardados no rádio. Os contactos guardados no rádio são mantidos.';
+    return 'Vai remover $_temp0 que não estão salvos no rádio. Os contatos salvos no rádio são mantidos.';
   }
 
   @override
   String get discoverCleanNothing =>
-      'Todos os contactos descobertos estão guardados no rádio. Nada para limpar.';
+      'Todos os contatos descobertos já estão salvos no rádio. Nada para limpar.';
 
   @override
   String discoverCleanDone(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: 'Removidos $n contactos',
-      one: 'Removido 1 contacto',
+      other: 'Removidos $n contatos',
+      one: 'Removido 1 contato',
     );
     return '$_temp0';
   }
@@ -2013,7 +2024,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get radioSettingsExperimentalWarning =>
-      'Usar com cuidado — estas opções afectam a compatibilidade no ar com outros nós.';
+      'Use com cuidado — estas opções afetam a compatibilidade no ar com outros nós.';
 
   @override
   String get radioSettingsPathHashMode => 'Tamaño del hash de ruta';
@@ -2591,7 +2602,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get topologyFilterRecent => 'Mostrar apenas contactos no rádio';
+  String get topologyFilterRecent => 'Mostrar apenas contatos no rádio';
 
   @override
   String get topologyFilterAll => 'Mostrar todos (incl. locais)';
@@ -2624,7 +2635,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get topologyPathsEmptyHint =>
-      'Faz um trace a partir de um\ncontacto para ver o caminho';
+      'Faça um trace a partir de um\ncontato para ver o caminho';
 
   @override
   String topologyPathsCount(int n) {

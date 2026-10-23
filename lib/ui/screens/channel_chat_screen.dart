@@ -1372,7 +1372,7 @@ class _ReplyStrip extends StatelessWidget {
     final senderLabel =
         message.isOutgoing
             ? '@[Você]'
-            : '@[${message.senderName ?? 'Contacto'}]';
+            : '@[${message.senderName ?? 'Contato'}]';
     return Container(
       margin: const EdgeInsets.only(bottom: 4),
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),

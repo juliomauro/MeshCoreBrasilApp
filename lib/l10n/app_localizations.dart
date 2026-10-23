@@ -109,7 +109,7 @@ abstract class AppLocalizations {
   /// No description provided for @navContacts.
   ///
   /// In pt, this message translates to:
-  /// **'Contactos'**
+  /// **'Contatos'**
   String get navContacts;
 
   /// No description provided for @navMap.
@@ -127,19 +127,19 @@ abstract class AppLocalizations {
   /// No description provided for @navSettings.
   ///
   /// In pt, this message translates to:
-  /// **'Definições'**
+  /// **'Configurações'**
   String get navSettings;
 
   /// No description provided for @commonSave.
   ///
   /// In pt, this message translates to:
-  /// **'Guardar'**
+  /// **'Salvar'**
   String get commonSave;
 
   /// No description provided for @commonSaving.
   ///
   /// In pt, this message translates to:
-  /// **'A guardar...'**
+  /// **'Salvando...'**
   String get commonSaving;
 
   /// No description provided for @commonCancel.
@@ -157,7 +157,7 @@ abstract class AppLocalizations {
   /// No description provided for @commonDelete.
   ///
   /// In pt, this message translates to:
-  /// **'Apagar'**
+  /// **'Excluir'**
   String get commonDelete;
 
   /// No description provided for @commonClose.
@@ -193,7 +193,7 @@ abstract class AppLocalizations {
   /// No description provided for @commonShare.
   ///
   /// In pt, this message translates to:
-  /// **'Partilhar'**
+  /// **'Compartilhar'**
   String get commonShare;
 
   /// No description provided for @commonCopy.
@@ -211,7 +211,7 @@ abstract class AppLocalizations {
   /// No description provided for @commonReset.
   ///
   /// In pt, this message translates to:
-  /// **'Repor'**
+  /// **'Redefinir'**
   String get commonReset;
 
   /// No description provided for @commonJustNow.
@@ -235,19 +235,19 @@ abstract class AppLocalizations {
   /// No description provided for @gpsSharingTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Partilha de GPS'**
+  /// **'Compartilhamento de GPS'**
   String get gpsSharingTitle;
 
   /// No description provided for @gpsSharingSubtitle.
   ///
   /// In pt, this message translates to:
-  /// **'Tu decides se a tua localização vai junto nos anúncios da rádio. Por defeito está desligada.'**
+  /// **'Você decide se a sua localização vai junto nos anúncios do rádio. Por padrão, vem desligado.'**
   String get gpsSharingSubtitle;
 
   /// No description provided for @gpsSharingStatusOff.
   ///
   /// In pt, this message translates to:
-  /// **'DESLIGADA'**
+  /// **'DESLIGADO'**
   String get gpsSharingStatusOff;
 
   /// No description provided for @gpsSharingStatusManual.
@@ -259,13 +259,13 @@ abstract class AppLocalizations {
   /// No description provided for @gpsSharingStatusAuto.
   ///
   /// In pt, this message translates to:
-  /// **'AUTOMÁTICA'**
+  /// **'AUTOMÁTICO'**
   String get gpsSharingStatusAuto;
 
   /// No description provided for @gpsSharingModeOff.
   ///
   /// In pt, this message translates to:
-  /// **'Desligada'**
+  /// **'Desligado'**
   String get gpsSharingModeOff;
 
   /// No description provided for @gpsSharingModeManual.
@@ -277,7 +277,7 @@ abstract class AppLocalizations {
   /// No description provided for @gpsSharingModeAuto.
   ///
   /// In pt, this message translates to:
-  /// **'Automática'**
+  /// **'Automático'**
   String get gpsSharingModeAuto;
 
   /// No description provided for @gpsSharingPrecisionTitle.
@@ -289,7 +289,7 @@ abstract class AppLocalizations {
   /// No description provided for @gpsSharingPrecisionExact.
   ///
   /// In pt, this message translates to:
-  /// **'Exacta'**
+  /// **'Exata'**
   String get gpsSharingPrecisionExact;
 
   /// No description provided for @gpsSharingPrecisionRough.
@@ -307,13 +307,13 @@ abstract class AppLocalizations {
   /// No description provided for @gpsSharingIntervalLabel.
   ///
   /// In pt, this message translates to:
-  /// **'Intervalo entre actualizações'**
+  /// **'Intervalo entre atualizações'**
   String get gpsSharingIntervalLabel;
 
   /// No description provided for @gpsSharingShareNow.
   ///
   /// In pt, this message translates to:
-  /// **'Partilhar agora'**
+  /// **'Compartilhar agora'**
   String get gpsSharingShareNow;
 
   /// No description provided for @gpsSharingClearNow.
@@ -331,13 +331,13 @@ abstract class AppLocalizations {
   /// No description provided for @gpsSharingPrivacyDisclaimer.
   ///
   /// In pt, this message translates to:
-  /// **'A tua posição será incluída nos anúncios LoRa que o teu rádio transmitir, podendo ser vista por outros nós. Liga apenas se aceitas partilhá-la.'**
+  /// **'A sua posição será incluída nos anúncios LoRa que o seu rádio transmitir, podendo ser vista por outros nós. Ligue apenas se você aceita compartilhá-la.'**
   String get gpsSharingPrivacyDisclaimer;
 
   /// No description provided for @gpsSharingLastShared.
   ///
   /// In pt, this message translates to:
-  /// **'Partilhado {ago} — {lat}, {lon}'**
+  /// **'Compartilhado {ago} — {lat}, {lon}'**
   String gpsSharingLastShared(Object ago, Object lat, Object lon);
 
   /// No description provided for @gpsSharingOutcomeOk.
@@ -355,7 +355,7 @@ abstract class AppLocalizations {
   /// No description provided for @gpsSharingOutcomeDisabled.
   ///
   /// In pt, this message translates to:
-  /// **'A partilha está desligada nas Definições.'**
+  /// **'O compartilhamento está desligado nas Configurações.'**
   String get gpsSharingOutcomeDisabled;
 
   /// No description provided for @gpsSharingOutcomeNoPerm.
@@ -367,7 +367,7 @@ abstract class AppLocalizations {
   /// No description provided for @gpsSharingOutcomeServiceOff.
   ///
   /// In pt, this message translates to:
-  /// **'Serviço de localização desligado no telemóvel.'**
+  /// **'Serviço de localização desligado no celular.'**
   String get gpsSharingOutcomeServiceOff;
 
   /// No description provided for @gpsSharingOutcomeNoFix.
@@ -379,7 +379,7 @@ abstract class AppLocalizations {
   /// No description provided for @gpsSharingOutcomeDisconnected.
   ///
   /// In pt, this message translates to:
-  /// **'Rádio desligado — liga primeiro.'**
+  /// **'Rádio desconectado — conecte primeiro.'**
   String get gpsSharingOutcomeDisconnected;
 
   /// No description provided for @gpsSharingOutcomeFailed.
@@ -391,7 +391,7 @@ abstract class AppLocalizations {
   /// No description provided for @gpsSharingOutcomeSkipped.
   ///
   /// In pt, this message translates to:
-  /// **'Posição não mudou — envio poupado.'**
+  /// **'Posição não mudou — envio dispensado.'**
   String get gpsSharingOutcomeSkipped;
 
   /// No description provided for @gpsSharingMinMoveLabel.
@@ -409,19 +409,19 @@ abstract class AppLocalizations {
   /// No description provided for @gpsSharingMinMoveHint.
   ///
   /// In pt, this message translates to:
-  /// **'Em modo automático, só envia novo fix se te moveste pelo menos esta distância desde o último envio. Poupa air-time da rede LoRa.'**
+  /// **'Em modo automático, só envia novo fix se você se moveu pelo menos esta distância desde o último envio. Economiza air-time da rede LoRa.'**
   String get gpsSharingMinMoveHint;
 
   /// No description provided for @gpsSharingAdvPolicyTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Difundir localização nos adverts'**
+  /// **'Divulgar localização nos adverts'**
   String get gpsSharingAdvPolicyTitle;
 
   /// No description provided for @gpsSharingAdvPolicyNever.
   ///
   /// In pt, this message translates to:
-  /// **'Desligado — os teus adverts não incluem coordenadas.'**
+  /// **'Desligado — os seus adverts não incluem coordenadas.'**
   String get gpsSharingAdvPolicyNever;
 
   /// No description provided for @gpsSharingAdvPolicyAlways.
@@ -445,7 +445,7 @@ abstract class AppLocalizations {
   /// No description provided for @mapVisibilityShowSubtitle.
   ///
   /// In pt, this message translates to:
-  /// **'Esconde este contacto do teu mapa, mesmo que os adverts incluam coordenadas.'**
+  /// **'Esconde este contato do seu mapa, mesmo que os adverts incluam coordenadas.'**
   String get mapVisibilityShowSubtitle;
 
   /// No description provided for @cannedMessagesTitle.
@@ -457,7 +457,7 @@ abstract class AppLocalizations {
   /// No description provided for @cannedMessagesSubtitle.
   ///
   /// In pt, this message translates to:
-  /// **'Biblioteca de respostas pré-gravadas para enviar com um toque (ou pelo botão SOS do widget).'**
+  /// **'Biblioteca de respostas prontas para enviar com um toque (ou pelo botão SOS do widget).'**
   String get cannedMessagesSubtitle;
 
   /// No description provided for @cannedMessagesAdd.
@@ -481,37 +481,37 @@ abstract class AppLocalizations {
   /// No description provided for @cannedMessagesEmpty.
   ///
   /// In pt, this message translates to:
-  /// **'Sem mensagens guardadas. Toca em + para adicionar.'**
+  /// **'Nenhuma mensagem salva. Toque em + para adicionar.'**
   String get cannedMessagesEmpty;
 
   /// No description provided for @cannedMessagesReset.
   ///
   /// In pt, this message translates to:
-  /// **'Repor por defeito'**
+  /// **'Restaurar padrão'**
   String get cannedMessagesReset;
 
   /// No description provided for @cannedMessagesResetTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Repor mensagens?'**
+  /// **'Restaurar mensagens?'**
   String get cannedMessagesResetTitle;
 
   /// No description provided for @cannedMessagesResetConfirm.
   ///
   /// In pt, this message translates to:
-  /// **'Vais perder todas as alterações e voltar à lista original.'**
+  /// **'Você vai perder todas as alterações e voltar à lista original.'**
   String get cannedMessagesResetConfirm;
 
   /// No description provided for @cannedMessagesDeleteTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Apagar mensagem?'**
+  /// **'Excluir mensagem?'**
   String get cannedMessagesDeleteTitle;
 
   /// No description provided for @cannedMessagesDeleteConfirm.
   ///
   /// In pt, this message translates to:
-  /// **'Vais apagar “{label}”.'**
+  /// **'Você vai excluir “{label}”.'**
   String cannedMessagesDeleteConfirm(Object label);
 
   /// No description provided for @cannedMessagesLabelHint.
@@ -553,7 +553,7 @@ abstract class AppLocalizations {
   /// No description provided for @cannedMessagesPickerSubtitle.
   ///
   /// In pt, this message translates to:
-  /// **'Toca para colocar no campo de texto.'**
+  /// **'Toque para colocar no campo de texto.'**
   String get cannedMessagesPickerSubtitle;
 
   /// No description provided for @commonConfirm.
@@ -601,7 +601,7 @@ abstract class AppLocalizations {
   /// No description provided for @pathHashMigrationNoticeBody.
   ///
   /// In pt, this message translates to:
-  /// **'A rede mudará para o modo hash de 2 bytes após 2/7/2026 (2 de julho). A aplicação irá configurar automaticamente o seu rádio nessa data.'**
+  /// **'A rede vai mudar para o modo hash de 2 bytes após 2/7/2026 (2 de julho). O aplicativo vai configurar automaticamente o seu rádio nessa data.'**
   String get pathHashMigrationNoticeBody;
 
   /// No description provided for @pathHashMigrationAppliedTitle.
@@ -613,13 +613,13 @@ abstract class AppLocalizations {
   /// No description provided for @pathHashMigrationAppliedBody.
   ///
   /// In pt, this message translates to:
-  /// **'O seu rádio foi automaticamente atualizado para o modo hash de 2 bytes a partir de 2/7/2026.'**
+  /// **'O seu rádio foi atualizado automaticamente para o modo hash de 2 bytes a partir de 2/7/2026.'**
   String get pathHashMigrationAppliedBody;
 
   /// No description provided for @commonLoading.
   ///
   /// In pt, this message translates to:
-  /// **'A carregar...'**
+  /// **'Carregando...'**
   String get commonLoading;
 
   /// No description provided for @commonSearch.
@@ -637,7 +637,7 @@ abstract class AppLocalizations {
   /// No description provided for @commonUnread.
   ///
   /// In pt, this message translates to:
-  /// **'Não lidos'**
+  /// **'Não lidas'**
   String get commonUnread;
 
   /// No description provided for @commonDetails.
@@ -703,13 +703,13 @@ abstract class AppLocalizations {
   /// No description provided for @commonPropagating.
   ///
   /// In pt, this message translates to:
-  /// **'A propagar...'**
+  /// **'Propagando...'**
   String get commonPropagating;
 
   /// No description provided for @chatBadgePropagatingTooltip.
   ///
   /// In pt, this message translates to:
-  /// **'A aguardar eco de repetidor...'**
+  /// **'Aguardando eco de repetidor...'**
   String get chatBadgePropagatingTooltip;
 
   /// No description provided for @chatBadgeTransmittedTooltip.
@@ -727,13 +727,13 @@ abstract class AppLocalizations {
   /// No description provided for @commonConnecting.
   ///
   /// In pt, this message translates to:
-  /// **'A ligar...'**
+  /// **'Conectando...'**
   String get commonConnecting;
 
   /// No description provided for @commonSearching.
   ///
   /// In pt, this message translates to:
-  /// **'A procurar...'**
+  /// **'Procurando...'**
   String get commonSearching;
 
   /// No description provided for @commonAuthenticated.
@@ -763,7 +763,7 @@ abstract class AppLocalizations {
   /// No description provided for @commonStatus.
   ///
   /// In pt, this message translates to:
-  /// **'Estado'**
+  /// **'Status'**
   String get commonStatus;
 
   /// No description provided for @commonPath.
@@ -793,7 +793,7 @@ abstract class AppLocalizations {
   /// No description provided for @commonContact.
   ///
   /// In pt, this message translates to:
-  /// **'Contacto'**
+  /// **'Contato'**
   String get commonContact;
 
   /// No description provided for @commonRoom.
@@ -859,31 +859,31 @@ abstract class AppLocalizations {
   /// No description provided for @commonSettings.
   ///
   /// In pt, this message translates to:
-  /// **'Definições'**
+  /// **'Configurações'**
   String get commonSettings;
 
   /// No description provided for @commonRadioDisconnected.
   ///
   /// In pt, this message translates to:
-  /// **'Rádio não ligado'**
+  /// **'Rádio não conectado'**
   String get commonRadioDisconnected;
 
   /// No description provided for @commonConfiguring.
   ///
   /// In pt, this message translates to:
-  /// **'A configurar...'**
+  /// **'Configurando...'**
   String get commonConfiguring;
 
   /// No description provided for @commonSaveToRadio.
   ///
   /// In pt, this message translates to:
-  /// **'Guardar no rádio'**
+  /// **'Salvar no rádio'**
   String get commonSaveToRadio;
 
   /// No description provided for @commonReportUrlCopied.
   ///
   /// In pt, this message translates to:
-  /// **'URL do relatório copiado'**
+  /// **'URL do relatório copiada'**
   String get commonReportUrlCopied;
 
   /// No description provided for @commonErrorColon.
@@ -901,7 +901,7 @@ abstract class AppLocalizations {
   /// No description provided for @commonUpdated.
   ///
   /// In pt, this message translates to:
-  /// **'Actualizado:'**
+  /// **'Atualizado:'**
   String get commonUpdated;
 
   /// No description provided for @commonAdd2Radio.
@@ -913,7 +913,7 @@ abstract class AppLocalizations {
   /// No description provided for @commonReconfigRadio.
   ///
   /// In pt, this message translates to:
-  /// **'Re-configurar no Rádio'**
+  /// **'Reconfigurar no Rádio'**
   String get commonReconfigRadio;
 
   /// No description provided for @commonHashtag.
@@ -955,19 +955,19 @@ abstract class AppLocalizations {
   /// No description provided for @homeDisconnectTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Desligar rádio?'**
+  /// **'Desconectar rádio?'**
   String get homeDisconnectTitle;
 
   /// No description provided for @homeDisconnectContent.
   ///
   /// In pt, this message translates to:
-  /// **'A ligação ao rádio será terminada'**
+  /// **'A conexão com o rádio será encerrada'**
   String get homeDisconnectContent;
 
   /// No description provided for @homeDisconnect.
   ///
   /// In pt, this message translates to:
-  /// **'Desligar'**
+  /// **'Desconectar'**
   String get homeDisconnect;
 
   /// No description provided for @homeExitTitle.
@@ -979,7 +979,7 @@ abstract class AppLocalizations {
   /// No description provided for @homeExitContent.
   ///
   /// In pt, this message translates to:
-  /// **'A ligação ao rádio será terminada e a aplicação encerrada.'**
+  /// **'A conexão com o rádio será encerrada e o aplicativo fechado.'**
   String get homeExitContent;
 
   /// No description provided for @homeExit.
@@ -1009,37 +1009,37 @@ abstract class AppLocalizations {
   /// No description provided for @settingsShareContact.
   ///
   /// In pt, this message translates to:
-  /// **'Partilhar o meu contacto'**
+  /// **'Compartilhar meu contato'**
   String get settingsShareContact;
 
   /// No description provided for @settingsShareContactDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Mostra QR Code para partilhar'**
+  /// **'Mostra QR Code para compartilhar'**
   String get settingsShareContactDesc;
 
   /// No description provided for @settingsConnection.
   ///
   /// In pt, this message translates to:
-  /// **'Ligação'**
+  /// **'Conexão'**
   String get settingsConnection;
 
   /// No description provided for @settingsConnected.
   ///
   /// In pt, this message translates to:
-  /// **'Ligado'**
+  /// **'Conectado'**
   String get settingsConnected;
 
   /// No description provided for @settingsConnectionError.
   ///
   /// In pt, this message translates to:
-  /// **'Erro de ligação'**
+  /// **'Erro de conexão'**
   String get settingsConnectionError;
 
   /// No description provided for @settingsDisconnected.
   ///
   /// In pt, this message translates to:
-  /// **'Desligado'**
+  /// **'Desconectado'**
   String get settingsDisconnected;
 
   /// No description provided for @settingsAutoReconnect.
@@ -1051,7 +1051,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsAutoReconnectDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Reconecta automaticamente quando a ligação é perdida'**
+  /// **'Reconecta automaticamente quando a conexão é perdida'**
   String get settingsAutoReconnectDesc;
 
   /// No description provided for @settingsRadioConfig.
@@ -1069,13 +1069,13 @@ abstract class AppLocalizations {
   /// No description provided for @settingsReboot.
   ///
   /// In pt, this message translates to:
-  /// **'Reboot'**
+  /// **'Reiniciar'**
   String get settingsReboot;
 
   /// No description provided for @settingsShutdown.
   ///
   /// In pt, this message translates to:
-  /// **'Shutdown'**
+  /// **'Desligar'**
   String get settingsShutdown;
 
   /// No description provided for @settingsRebootTitle.
@@ -1087,19 +1087,19 @@ abstract class AppLocalizations {
   /// No description provided for @settingsRebootContent.
   ///
   /// In pt, this message translates to:
-  /// **'Isto vai reiniciar o firmware do rádio. Tens a certeza?'**
+  /// **'Isso vai reiniciar o firmware do rádio. Tem certeza?'**
   String get settingsRebootContent;
 
   /// No description provided for @settingsRebootSent.
   ///
   /// In pt, this message translates to:
-  /// **'Comando de reboot enviado. A aguardar reconexão...'**
+  /// **'Comando de reinício enviado. Aguardando reconexão...'**
   String get settingsRebootSent;
 
   /// No description provided for @settingsRebootFail.
   ///
   /// In pt, this message translates to:
-  /// **'Falha ao enviar comando de reboot'**
+  /// **'Falha ao enviar comando de reinício'**
   String get settingsRebootFail;
 
   /// No description provided for @settingsAppearance.
@@ -1141,7 +1141,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsTextSizeDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Ajusta o tamanho global do texto na app.'**
+  /// **'Ajusta o tamanho global do texto no app.'**
   String get settingsTextSizeDesc;
 
   /// No description provided for @settingsAccent.
@@ -1153,7 +1153,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsAccentDefault.
   ///
   /// In pt, this message translates to:
-  /// **'Predefinido (laranja da marca)'**
+  /// **'Padrão (azul da marca)'**
   String get settingsAccentDefault;
 
   /// No description provided for @settingsAccentCustom.
@@ -1165,7 +1165,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsAccentReset.
   ///
   /// In pt, this message translates to:
-  /// **'Repor predefinida'**
+  /// **'Restaurar padrão'**
   String get settingsAccentReset;
 
   /// No description provided for @settingsMentionColors.
@@ -1201,7 +1201,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsEnableNotifications.
   ///
   /// In pt, this message translates to:
-  /// **'Activar notificações'**
+  /// **'Ativar notificações'**
   String get settingsEnableNotifications;
 
   /// No description provided for @settingsEnableNotificationsDesc.
@@ -1255,7 +1255,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsChannelMentionsOnlyDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Só notificar quando houver uma menção ao teu nome no canal'**
+  /// **'Só notificar quando houver uma menção ao seu nome no canal'**
   String get settingsChannelMentionsOnlyDesc;
 
   /// No description provided for @settingsBackgroundOnly.
@@ -1267,13 +1267,13 @@ abstract class AppLocalizations {
   /// No description provided for @settingsBackgroundOnlyDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Só notificar quando a app não está em primeiro plano'**
+  /// **'Só notificar quando o app não está em primeiro plano'**
   String get settingsBackgroundOnlyDesc;
 
   /// No description provided for @settingsSosDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Configura o destino e a mensagem de emergência. Usa \'{gps}\' no texto para inserir coordenadas.'**
+  /// **'Configure o destino e a mensagem de emergência. Use \'{gps}\' no texto para inserir coordenadas.'**
   String settingsSosDesc(Object gps);
 
   /// No description provided for @settingsSosTarget.
@@ -1291,7 +1291,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsSosTargetPrivateContact.
   ///
   /// In pt, this message translates to:
-  /// **'Contacto privado'**
+  /// **'Contato privado'**
   String get settingsSosTargetPrivateContact;
 
   /// No description provided for @settingsSosChannelLabel.
@@ -1309,25 +1309,25 @@ abstract class AppLocalizations {
   /// No description provided for @settingsSosDestinationContact.
   ///
   /// In pt, this message translates to:
-  /// **'Contacto de destino'**
+  /// **'Contato de destino'**
   String get settingsSosDestinationContact;
 
   /// No description provided for @settingsSosNoContactsAvailable.
   ///
   /// In pt, this message translates to:
-  /// **'Sem contactos disponíveis'**
+  /// **'Sem contatos disponíveis'**
   String get settingsSosNoContactsAvailable;
 
   /// No description provided for @settingsSosTapToSearchContact.
   ///
   /// In pt, this message translates to:
-  /// **'Toque para procurar contacto'**
+  /// **'Toque para procurar contato'**
   String get settingsSosTapToSearchContact;
 
   /// No description provided for @settingsSosClearContact.
   ///
   /// In pt, this message translates to:
-  /// **'Limpar contacto'**
+  /// **'Limpar contato'**
   String get settingsSosClearContact;
 
   /// No description provided for @settingsSosMessage.
@@ -1339,13 +1339,13 @@ abstract class AppLocalizations {
   /// No description provided for @settingsSosMessageHint.
   ///
   /// In pt, this message translates to:
-  /// **'Ex.: SOS - preciso de ajuda! \'{gps}\''**
+  /// **'Ex: SOS - preciso de ajuda! \'{gps}\''**
   String settingsSosMessageHint(Object gps);
 
   /// No description provided for @settingsSosIncludeGps.
   ///
   /// In pt, this message translates to:
-  /// **'Incluir coordenadas GPS do telemóvel'**
+  /// **'Incluir coordenadas GPS do celular'**
   String get settingsSosIncludeGps;
 
   /// No description provided for @settingsSosIncludeGpsDesc.
@@ -1369,13 +1369,13 @@ abstract class AppLocalizations {
   /// No description provided for @settingsSosRadioNotConnected.
   ///
   /// In pt, this message translates to:
-  /// **'Rádio não ligado'**
+  /// **'Rádio não conectado'**
   String get settingsSosRadioNotConnected;
 
   /// No description provided for @settingsSosMissingContact.
   ///
   /// In pt, this message translates to:
-  /// **'Contacto SOS não configurado/encontrado'**
+  /// **'Contato SOS não configurado/encontrado'**
   String get settingsSosMissingContact;
 
   /// No description provided for @settingsSosSendFailed.
@@ -1393,7 +1393,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsSosSearchContact.
   ///
   /// In pt, this message translates to:
-  /// **'Procurar contacto SOS'**
+  /// **'Procurar contato SOS'**
   String get settingsSosSearchContact;
 
   /// No description provided for @settingsSosSearchHint.
@@ -1405,7 +1405,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsSosNoContactFound.
   ///
   /// In pt, this message translates to:
-  /// **'Nenhum contacto encontrado'**
+  /// **'Nenhum contato encontrado'**
   String get settingsSosNoContactFound;
 
   /// No description provided for @settingsSosUnnamedChannel.
@@ -1429,25 +1429,25 @@ abstract class AppLocalizations {
   /// No description provided for @settingsSosHoldToSend.
   ///
   /// In pt, this message translates to:
-  /// **'Segura para enviar SOS'**
+  /// **'Segure para enviar SOS'**
   String get settingsSosHoldToSend;
 
   /// No description provided for @cannedMessagesSosHint.
   ///
   /// In pt, this message translates to:
-  /// **'Segura o chip SOS para enviar com as configurações definidas'**
+  /// **'Segure o chip SOS para enviar com as configurações definidas'**
   String get cannedMessagesSosHint;
 
   /// No description provided for @settingsPruneTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Limpeza de Contactos'**
+  /// **'Limpeza de Contatos'**
   String get settingsPruneTitle;
 
   /// No description provided for @settingsPruneDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Remove contactos inativos da memória da rádio'**
+  /// **'Remove contatos inativos da memória do rádio'**
   String get settingsPruneDesc;
 
   /// No description provided for @settingsPruneDaysLabel.
@@ -1459,7 +1459,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsPruneDaysDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Contactos sem contacto > X dias serão removidos'**
+  /// **'Contatos sem contato há mais de X dias serão removidos'**
   String get settingsPruneDaysDesc;
 
   /// No description provided for @settingsPruneDaysUnit.
@@ -1471,7 +1471,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsPruneTypesTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Tipos de Contacto a Remover'**
+  /// **'Tipos de Contato a Remover'**
   String get settingsPruneTypesTitle;
 
   /// No description provided for @settingsPruneChatsTitle.
@@ -1483,7 +1483,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsPruneChatsDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Remover contactos de chat (0x01)'**
+  /// **'Remover contatos de chat (0x01)'**
   String get settingsPruneChatsDesc;
 
   /// No description provided for @settingsPruneRepeatersTitle.
@@ -1495,7 +1495,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsPruneRepeatersDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Remover contactos de repetidor (0x02)'**
+  /// **'Remover contatos de repetidor (0x02)'**
   String get settingsPruneRepeatersDesc;
 
   /// No description provided for @settingsPruneRoomsTitle.
@@ -1507,7 +1507,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsPruneRoomsDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Remover contactos de sala (0x03)'**
+  /// **'Remover contatos de sala (0x03)'**
   String get settingsPruneRoomsDesc;
 
   /// No description provided for @settingsPruneSensorsTitle.
@@ -1519,7 +1519,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsPruneSensorsDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Remover contactos de sensor (0x04)'**
+  /// **'Remover contatos de sensor (0x04)'**
   String get settingsPruneSensorsDesc;
 
   /// No description provided for @settingsPruneRestoreDefaults.
@@ -1537,13 +1537,13 @@ abstract class AppLocalizations {
   /// No description provided for @settingsShutdownUnavailable.
   ///
   /// In pt, this message translates to:
-  /// **'Shutdown não disponível neste firmware'**
+  /// **'Desligar não disponível neste firmware'**
   String get settingsShutdownUnavailable;
 
   /// No description provided for @settingsOwnQrCodeTitle.
   ///
   /// In pt, this message translates to:
-  /// **'O meu QR Code'**
+  /// **'Meu QR Code'**
   String get settingsOwnQrCodeTitle;
 
   /// No description provided for @settingsEditNameTitle.
@@ -1573,13 +1573,13 @@ abstract class AppLocalizations {
   /// No description provided for @settingsPrivateKeyDesc.
   ///
   /// In pt, this message translates to:
-  /// **'A chave privada identifica-te na rede. Guarda uma cópia segura antes de mudar de dispositivo.'**
+  /// **'A chave privada identifica você na rede. Guarde uma cópia segura antes de trocar de dispositivo.'**
   String get settingsPrivateKeyDesc;
 
   /// No description provided for @settingsSaveFromRadio.
   ///
   /// In pt, this message translates to:
-  /// **'Guardar do rádio'**
+  /// **'Salvar do rádio'**
   String get settingsSaveFromRadio;
 
   /// No description provided for @settingsPasteKey.
@@ -1591,7 +1591,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsShareCopy.
   ///
   /// In pt, this message translates to:
-  /// **'Partilhar cópia'**
+  /// **'Compartilhar cópia'**
   String get settingsShareCopy;
 
   /// No description provided for @settingsRestoreToRadio.
@@ -1603,7 +1603,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsDeleteLocalCopy.
   ///
   /// In pt, this message translates to:
-  /// **'Apagar cópia local'**
+  /// **'Excluir cópia local'**
   String get settingsDeleteLocalCopy;
 
   /// No description provided for @settingsRestorePrivateKeyTitle.
@@ -1615,43 +1615,43 @@ abstract class AppLocalizations {
   /// No description provided for @settingsRestorePrivateKeyContent.
   ///
   /// In pt, this message translates to:
-  /// **'Esta operação vai substituir a chave privada actual do rádio. A nova identidade é aplicada imediatamente — a chave pública na app será actualizada.\n\nTens a certeza?'**
+  /// **'Esta operação vai substituir a chave privada atual do rádio. A nova identidade é aplicada imediatamente — a chave pública no app será atualizada.\n\nTem certeza?'**
   String get settingsRestorePrivateKeyContent;
 
   /// No description provided for @settingsDeleteBackupTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Apagar cópia de segurança'**
+  /// **'Excluir cópia de segurança'**
   String get settingsDeleteBackupTitle;
 
   /// No description provided for @settingsKeySavedSuccess.
   ///
   /// In pt, this message translates to:
-  /// **'Chave privada guardada com sucesso.'**
+  /// **'Chave privada salva com sucesso.'**
   String get settingsKeySavedSuccess;
 
   /// No description provided for @settingsKeyImportedSuccess.
   ///
   /// In pt, this message translates to:
-  /// **'Chave restaurada com sucesso. Chave pública actualizada.'**
+  /// **'Chave restaurada com sucesso. Chave pública atualizada.'**
   String get settingsKeyImportedSuccess;
 
   /// No description provided for @settingsKeyExportFailed.
   ///
   /// In pt, this message translates to:
-  /// **'Exportação falhou. O firmware pode não ter suporte activado.'**
+  /// **'Exportação falhou. O firmware pode não ter esse suporte ativado.'**
   String get settingsKeyExportFailed;
 
   /// No description provided for @settingsKeyRestoreFailed.
   ///
   /// In pt, this message translates to:
-  /// **'Restauro falhou. O firmware pode não ter suporte activado.'**
+  /// **'Restauração falhou. O firmware pode não ter esse suporte ativado.'**
   String get settingsKeyRestoreFailed;
 
   /// No description provided for @settingsDeleteBackupContent.
   ///
   /// In pt, this message translates to:
-  /// **'A cópia da chave privada guardada neste dispositivo será eliminada. O rádio não é afectado.'**
+  /// **'A cópia da chave privada salva neste dispositivo será apagada. O rádio não é afetado.'**
   String get settingsDeleteBackupContent;
 
   /// No description provided for @settingsKeyCopied.
@@ -1663,7 +1663,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsKeyCopySaved.
   ///
   /// In pt, this message translates to:
-  /// **'Cópia guardada neste dispositivo.'**
+  /// **'Cópia salva neste dispositivo.'**
   String get settingsKeyCopySaved;
 
   /// No description provided for @settingsCopyKeyTooltip.
@@ -1675,7 +1675,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsKeyConnectToBackup.
   ///
   /// In pt, this message translates to:
-  /// **'Liga ao rádio para fazer cópia de segurança da chave.'**
+  /// **'Conecte-se ao rádio para fazer backup da chave.'**
   String get settingsKeyConnectToBackup;
 
   /// No description provided for @settingsKeyShareSubject.
@@ -1693,7 +1693,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsPasteKeyHint.
   ///
   /// In pt, this message translates to:
-  /// **'Cola aqui a chave privada de uma cópia anterior (128 caracteres hex).'**
+  /// **'Cole aqui a chave privada de uma cópia anterior (128 caracteres hex).'**
   String get settingsPasteKeyHint;
 
   /// No description provided for @settingsKeyHexLabel.
@@ -1705,7 +1705,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsKeyInvalidHex.
   ///
   /// In pt, this message translates to:
-  /// **'Chave inválida — deve ter exactamente 128 caracteres hexadecimais.'**
+  /// **'Chave inválida — deve ter exatamente 128 caracteres hexadecimais.'**
   String get settingsKeyInvalidHex;
 
   /// No description provided for @commonContinue.
@@ -1729,14 +1729,32 @@ abstract class AppLocalizations {
   /// No description provided for @settingsAppSubtitle.
   ///
   /// In pt, this message translates to:
-  /// **'MeshCore Portugal'**
+  /// **'App para rádios MeshCore'**
   String get settingsAppSubtitle;
 
   /// No description provided for @settingsCredit.
   ///
   /// In pt, this message translates to:
-  /// **'Código fonte inicial criado por Paulo Pereira aka GZ7d0'**
+  /// **'Código fonte original por Paulo Pereira aka GZ7d0'**
   String get settingsCredit;
+
+  /// No description provided for @settingsForkNotice.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fork brasileiro do lusoapp, da Comunidade MeshCore Portugal, adaptado pela comunidade MeshCore Brasil.'**
+  String get settingsForkNotice;
+
+  /// No description provided for @settingsForkRepo.
+  ///
+  /// In pt, this message translates to:
+  /// **'github.com/Meshcore-Portugal/lusoapp'**
+  String get settingsForkRepo;
+
+  /// No description provided for @settingsForkMaintainer.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fork brasileiro mantido por Oruam Oliuj'**
+  String get settingsForkMaintainer;
 
   /// No description provided for @settingsVersion.
   ///
@@ -1801,7 +1819,7 @@ abstract class AppLocalizations {
   /// No description provided for @contactsSearchHint.
   ///
   /// In pt, this message translates to:
-  /// **'Pesquisar contactos...'**
+  /// **'Pesquisar contatos...'**
   String get contactsSearchHint;
 
   /// No description provided for @contactsSendAdvert.
@@ -1867,7 +1885,7 @@ abstract class AppLocalizations {
   /// No description provided for @contactsDiscover.
   ///
   /// In pt, this message translates to:
-  /// **'Descobrir contactos'**
+  /// **'Descobrir contatos'**
   String get contactsDiscover;
 
   /// No description provided for @contactsMultiSelect.
@@ -1903,7 +1921,7 @@ abstract class AppLocalizations {
   /// No description provided for @contactsEmpty.
   ///
   /// In pt, this message translates to:
-  /// **'Sem contactos'**
+  /// **'Sem contatos'**
   String get contactsEmpty;
 
   /// No description provided for @contactsEmptyFavorites.
@@ -1915,7 +1933,7 @@ abstract class AppLocalizations {
   /// No description provided for @contactsEmptyHint.
   ///
   /// In pt, this message translates to:
-  /// **'Os contactos aparecem quando o rádio os descobre'**
+  /// **'Os contatos aparecem quando o rádio os descobre'**
   String get contactsEmptyHint;
 
   /// No description provided for @contactsSelected.
@@ -1939,13 +1957,13 @@ abstract class AppLocalizations {
   /// No description provided for @contactsAddContact.
   ///
   /// In pt, this message translates to:
-  /// **'Adicionar contacto'**
+  /// **'Adicionar contato'**
   String get contactsAddContact;
 
   /// No description provided for @contactsAddInstruction.
   ///
   /// In pt, this message translates to:
-  /// **'Envie um anúncio para que outros nós o descubram automaticamente, ou adicione manualmente através da chave pública'**
+  /// **'Envie um anúncio para que outros nós o descubram automaticamente, ou adicione manualmente pela chave pública'**
   String get contactsAddInstruction;
 
   /// No description provided for @contactsSendAdvertAuto.
@@ -1999,7 +2017,7 @@ abstract class AppLocalizations {
   /// No description provided for @contactsAdding.
   ///
   /// In pt, this message translates to:
-  /// **'A adicionar...'**
+  /// **'Adicionando...'**
   String get contactsAdding;
 
   /// No description provided for @contactsSeen.
@@ -2011,7 +2029,7 @@ abstract class AppLocalizations {
   /// No description provided for @contactsRenameTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Renomear contacto'**
+  /// **'Renomear contato'**
   String get contactsRenameTitle;
 
   /// No description provided for @contactsAnnouncedName.
@@ -2029,7 +2047,7 @@ abstract class AppLocalizations {
   /// No description provided for @contactsSaveToRadioTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Guardar contacto no rádio'**
+  /// **'Salvar contato no rádio'**
   String get contactsSaveToRadioTitle;
 
   /// No description provided for @contactsTypeCompanion.
@@ -2041,25 +2059,25 @@ abstract class AppLocalizations {
   /// No description provided for @contactsSavedToRadio.
   ///
   /// In pt, this message translates to:
-  /// **'{name} guardado no rádio'**
+  /// **'{name} salvo no rádio'**
   String contactsSavedToRadio(String name);
 
   /// No description provided for @contactsSaveToRadioError.
   ///
   /// In pt, this message translates to:
-  /// **'Erro ao guardar contacto no rádio'**
+  /// **'Erro ao salvar contato no rádio'**
   String get contactsSaveToRadioError;
 
   /// No description provided for @contactsSaveTimeout.
   ///
   /// In pt, this message translates to:
-  /// **'Timeout: rádio não respondeu'**
+  /// **'Tempo esgotado: rádio não respondeu'**
   String get contactsSaveTimeout;
 
   /// No description provided for @contactsRemoveTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Remover contacto(s)?'**
+  /// **'Remover contato(s)?'**
   String get contactsRemoveTitle;
 
   /// No description provided for @contactsRemovedPrefix.
@@ -2077,13 +2095,13 @@ abstract class AppLocalizations {
   /// No description provided for @contactsRemoveError.
   ///
   /// In pt, this message translates to:
-  /// **'Erro ao remover contactos'**
+  /// **'Erro ao remover contatos'**
   String get contactsRemoveError;
 
   /// No description provided for @contactsRemoveFromListSuffix.
   ///
   /// In pt, this message translates to:
-  /// **'da lista de contactos?'**
+  /// **'da lista de contatos?'**
   String get contactsRemoveFromListSuffix;
 
   /// No description provided for @contactsRemoveRadioError.
@@ -2095,7 +2113,7 @@ abstract class AppLocalizations {
   /// No description provided for @contactsRemoveTimeout.
   ///
   /// In pt, this message translates to:
-  /// **'Timeout: rádio não respondeu à remoção'**
+  /// **'Tempo esgotado: rádio não respondeu à remoção'**
   String get contactsRemoveTimeout;
 
   /// No description provided for @contactsRemoveFavorites.
@@ -2113,7 +2131,7 @@ abstract class AppLocalizations {
   /// No description provided for @contactsShareQR.
   ///
   /// In pt, this message translates to:
-  /// **'Partilhar via QR'**
+  /// **'Compartilhar via QR'**
   String get contactsShareQR;
 
   /// No description provided for @contactsPrivateMessage.
@@ -2137,19 +2155,19 @@ abstract class AppLocalizations {
   /// No description provided for @contactsManagePath.
   ///
   /// In pt, this message translates to:
-  /// **'Gerir caminho'**
+  /// **'Gerenciar caminho'**
   String get contactsManagePath;
 
   /// No description provided for @contactsCurrentPath.
   ///
   /// In pt, this message translates to:
-  /// **'Caminho actual:'**
+  /// **'Caminho atual:'**
   String get contactsCurrentPath;
 
   /// No description provided for @contactsRemoveContact.
   ///
   /// In pt, this message translates to:
-  /// **'Remover contacto'**
+  /// **'Remover contato'**
   String get contactsRemoveContact;
 
   /// No description provided for @contactsAdminLabel.
@@ -2179,13 +2197,13 @@ abstract class AppLocalizations {
   /// No description provided for @contactsPassword.
   ///
   /// In pt, this message translates to:
-  /// **'Palavra-passe (opcional)'**
+  /// **'Senha (opcional)'**
   String get contactsPassword;
 
   /// No description provided for @contactsPasswordHint.
   ///
   /// In pt, this message translates to:
-  /// **'Deixar em branco se sem palavra-passe'**
+  /// **'Deixe em branco se não houver senha'**
   String get contactsPasswordHint;
 
   /// No description provided for @contactsJoin.
@@ -2197,19 +2215,19 @@ abstract class AppLocalizations {
   /// No description provided for @contactsStatusSent.
   ///
   /// In pt, this message translates to:
-  /// **'Pedido de estado enviado...'**
+  /// **'Pedido de status enviado...'**
   String get contactsStatusSent;
 
   /// No description provided for @contactsStatusSending.
   ///
   /// In pt, this message translates to:
-  /// **'A enviar:'**
+  /// **'Enviando:'**
   String get contactsStatusSending;
 
   /// No description provided for @contactsRemoteActions.
   ///
   /// In pt, this message translates to:
-  /// **'Acções Remotas'**
+  /// **'Ações Remotas'**
   String get contactsRemoteActions;
 
   /// No description provided for @contactsFloodAdvert.
@@ -2233,7 +2251,7 @@ abstract class AppLocalizations {
   /// No description provided for @contactsZeroHopAdvertDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Anúncio só para vizinhos directos'**
+  /// **'Anúncio só para vizinhos diretos'**
   String get contactsZeroHopAdvertDesc;
 
   /// No description provided for @contactsSyncClock.
@@ -2245,7 +2263,7 @@ abstract class AppLocalizations {
   /// No description provided for @contactsSyncClockDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Envia o timestamp actual para o nó'**
+  /// **'Envia o timestamp atual para o nó'**
   String get contactsSyncClockDesc;
 
   /// No description provided for @contactsStartOTA.
@@ -2257,7 +2275,7 @@ abstract class AppLocalizations {
   /// No description provided for @contactsStartOTADesc.
   ///
   /// In pt, this message translates to:
-  /// **'Inicia actualização OTA — NRF DFU / ESP32'**
+  /// **'Inicia atualização OTA — NRF DFU / ESP32'**
   String get contactsStartOTADesc;
 
   /// No description provided for @contactsConfirmOTATitle.
@@ -2269,13 +2287,13 @@ abstract class AppLocalizations {
   /// No description provided for @contactsConfirmOTAContent.
   ///
   /// In pt, this message translates to:
-  /// **'O rádio vai entrar em modo de actualização OTA e ficará temporariamente inacessível'**
+  /// **'O rádio vai entrar em modo de atualização OTA e ficará temporariamente inacessível'**
   String get contactsConfirmOTAContent;
 
   /// No description provided for @contactsConfirmOTAQuestion.
   ///
   /// In pt, this message translates to:
-  /// **'Tens a certeza?'**
+  /// **'Tem certeza?'**
   String get contactsConfirmOTAQuestion;
 
   /// No description provided for @contactsStats.
@@ -2323,7 +2341,7 @@ abstract class AppLocalizations {
   /// No description provided for @contactsDirectRxTx.
   ///
   /// In pt, this message translates to:
-  /// **'Directo RX/TX'**
+  /// **'Direto RX/TX'**
   String get contactsDirectRxTx;
 
   /// No description provided for @contactsAirtimeTx.
@@ -2347,7 +2365,7 @@ abstract class AppLocalizations {
   /// No description provided for @contactsNotSavedHint.
   ///
   /// In pt, this message translates to:
-  /// **'Este contacto foi ouvido mas não está guardado no rádio'**
+  /// **'Este contato foi ouvido mas não está salvo no rádio'**
   String get contactsNotSavedHint;
 
   /// No description provided for @channelsCreatePrivate.
@@ -2359,19 +2377,19 @@ abstract class AppLocalizations {
   /// No description provided for @channelsCreatePrivateDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Seguro com uma chave secreta'**
+  /// **'Protegido com uma chave secreta'**
   String get channelsCreatePrivateDesc;
 
   /// No description provided for @channelsJoinPrivate.
   ///
   /// In pt, this message translates to:
-  /// **'Entrar num Canal Privado'**
+  /// **'Entrar em um Canal Privado'**
   String get channelsJoinPrivate;
 
   /// No description provided for @channelsJoinPrivateDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Introduza manualmente uma chave secreta'**
+  /// **'Digite manualmente uma chave secreta'**
   String get channelsJoinPrivateDesc;
 
   /// No description provided for @channelsJoinPublic.
@@ -2389,7 +2407,7 @@ abstract class AppLocalizations {
   /// No description provided for @channelsJoinHashtag.
   ///
   /// In pt, this message translates to:
-  /// **'Entrar num Canal Hashtag'**
+  /// **'Entrar em um Canal Hashtag'**
   String get channelsJoinHashtag;
 
   /// No description provided for @channelsJoinHashtagDesc.
@@ -2407,7 +2425,7 @@ abstract class AppLocalizations {
   /// No description provided for @channelsReadQRDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Digitalizar o QR Code de um canal'**
+  /// **'Escanear o QR Code de um canal'**
   String get channelsReadQRDesc;
 
   /// No description provided for @channelsSlotPosition.
@@ -2455,7 +2473,7 @@ abstract class AppLocalizations {
   /// No description provided for @channelsNameHintPrivate.
   ///
   /// In pt, this message translates to:
-  /// **'ex: A Minha Rede'**
+  /// **'ex: Minha Rede'**
   String get channelsNameHintPrivate;
 
   /// No description provided for @channelsSecretKey.
@@ -2503,13 +2521,13 @@ abstract class AppLocalizations {
   /// No description provided for @channelsRandomKeyInfo.
   ///
   /// In pt, this message translates to:
-  /// **'Guarde esta chave ou partilhe o QR Code para convidar outros'**
+  /// **'Guarde esta chave ou compartilhe o QR Code para convidar outros'**
   String get channelsRandomKeyInfo;
 
   /// No description provided for @channelsRegenerateKey.
   ///
   /// In pt, this message translates to:
-  /// **'Regenerar chave'**
+  /// **'Gerar nova chave'**
   String get channelsRegenerateKey;
 
   /// No description provided for @channelsEmpty.
@@ -2527,7 +2545,7 @@ abstract class AppLocalizations {
   /// No description provided for @channelsRefresh.
   ///
   /// In pt, this message translates to:
-  /// **'Actualizar Canais'**
+  /// **'Atualizar Canais'**
   String get channelsRefresh;
 
   /// No description provided for @channelsAllRead.
@@ -2563,7 +2581,7 @@ abstract class AppLocalizations {
   /// No description provided for @channelsClearHistoryConfirm.
   ///
   /// In pt, this message translates to:
-  /// **'Apagar todas as mensagens deste canal? Esta ação não pode ser revertida'**
+  /// **'Excluir todas as mensagens deste canal? Esta ação não pode ser desfeita'**
   String get channelsClearHistoryConfirm;
 
   /// No description provided for @channelsEditSheet.
@@ -2587,19 +2605,19 @@ abstract class AppLocalizations {
   /// No description provided for @channelsQRDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Partilhe este QR Code para dar acesso ao canal'**
+  /// **'Compartilhe este QR Code para dar acesso ao canal'**
   String get channelsQRDesc;
 
   /// No description provided for @channelsShareText.
   ///
   /// In pt, this message translates to:
-  /// **'Partilhar texto'**
+  /// **'Compartilhar texto'**
   String get channelsShareText;
 
   /// No description provided for @channelsShareQR.
   ///
   /// In pt, this message translates to:
-  /// **'Partilhar QR'**
+  /// **'Compartilhar QR'**
   String get channelsShareQR;
 
   /// No description provided for @channelsRemovePublicTitle.
@@ -2611,7 +2629,7 @@ abstract class AppLocalizations {
   /// No description provided for @channelsRemovePublicWarning.
   ///
   /// In pt, this message translates to:
-  /// **'Está prestes a remover o Canal Público. Este é o canal principal partilhado pela comunidade MeshCore. Tem a certeza?'**
+  /// **'Você está prestes a remover o Canal Público. Este é o canal principal compartilhado pela comunidade MeshCore. Tem certeza?'**
   String get channelsRemovePublicWarning;
 
   /// No description provided for @channelsRemoveAnyway.
@@ -2629,13 +2647,13 @@ abstract class AppLocalizations {
   /// No description provided for @channelsRemoveConfirm.
   ///
   /// In pt, this message translates to:
-  /// **'Tem a certeza que quer remover'**
+  /// **'Tem certeza que quer remover'**
   String get channelsRemoveConfirm;
 
   /// No description provided for @channelsRemoveWarning.
   ///
   /// In pt, this message translates to:
-  /// **'Esta acção não pode ser desfeita.'**
+  /// **'Esta ação não pode ser desfeita.'**
   String get channelsRemoveWarning;
 
   /// No description provided for @channelsMuteTitle.
@@ -2647,7 +2665,7 @@ abstract class AppLocalizations {
   /// No description provided for @channelsUnmuteTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Notificações activas'**
+  /// **'Notificações ativas'**
   String get channelsUnmuteTitle;
 
   /// No description provided for @channelsMuteSubtitleOn.
@@ -2785,19 +2803,19 @@ abstract class AppLocalizations {
   /// No description provided for @chatPathExplanation.
   ///
   /// In pt, this message translates to:
-  /// **'Cada caminho representa uma vez que o teu rádio ouviu a mensagem de volta'**
+  /// **'Cada caminho representa uma vez que o seu rádio ouviu a mensagem de volta'**
   String get chatPathExplanation;
 
   /// No description provided for @chatPathInstruction.
   ///
   /// In pt, this message translates to:
-  /// **'Toca num caminho para ver a rota completa'**
+  /// **'Toque em um caminho para ver a rota completa'**
   String get chatPathInstruction;
 
   /// No description provided for @chatNoPathData.
   ///
   /// In pt, this message translates to:
-  /// **'Os dados de caminho não estão disponíveis. Reconecta o rádio para registar novos caminhos'**
+  /// **'Os dados de caminho não estão disponíveis. Reconecte o rádio para registrar novos caminhos'**
   String get chatNoPathData;
 
   /// No description provided for @chatViewOnMap.
@@ -2809,7 +2827,7 @@ abstract class AppLocalizations {
   /// No description provided for @chatYourRadio.
   ///
   /// In pt, this message translates to:
-  /// **'O teu rádio'**
+  /// **'O seu rádio'**
   String get chatYourRadio;
 
   /// No description provided for @chatLastRepeater.
@@ -2821,7 +2839,7 @@ abstract class AppLocalizations {
   /// No description provided for @chatYouSent.
   ///
   /// In pt, this message translates to:
-  /// **'Enviaste a mensagem'**
+  /// **'Você enviou a mensagem'**
   String get chatYouSent;
 
   /// No description provided for @chatSentMessage.
@@ -2881,7 +2899,7 @@ abstract class AppLocalizations {
   /// No description provided for @chatDeleteMessage.
   ///
   /// In pt, this message translates to:
-  /// **'Apagar mensagem'**
+  /// **'Excluir mensagem'**
   String get chatDeleteMessage;
 
   /// No description provided for @chatMenuOptions.
@@ -2911,13 +2929,13 @@ abstract class AppLocalizations {
   /// No description provided for @connectTitle.
   ///
   /// In pt, this message translates to:
-  /// **'MeshCore Portugal'**
+  /// **'MeshCore Brasil'**
   String get connectTitle;
 
   /// No description provided for @connectReconnect.
   ///
   /// In pt, this message translates to:
-  /// **'Ligar novamente'**
+  /// **'Conectar novamente'**
   String get connectReconnect;
 
   /// No description provided for @connectContinueOffline.
@@ -2935,19 +2953,19 @@ abstract class AppLocalizations {
   /// No description provided for @connectSearching.
   ///
   /// In pt, this message translates to:
-  /// **'A procurar...'**
+  /// **'Procurando...'**
   String get connectSearching;
 
   /// No description provided for @connectBrowserNote.
   ///
   /// In pt, this message translates to:
-  /// **'O browser irá mostrar um seletor de dispositivos Bluetooth'**
+  /// **'O navegador vai mostrar um seletor de dispositivos Bluetooth'**
   String get connectBrowserNote;
 
   /// No description provided for @connectScanningMessage.
   ///
   /// In pt, this message translates to:
-  /// **'A procurar rádios MeshCore...'**
+  /// **'Procurando rádios MeshCore...'**
   String get connectScanningMessage;
 
   /// No description provided for @connectTapHint.
@@ -2965,7 +2983,7 @@ abstract class AppLocalizations {
   /// No description provided for @connectSectionSerial.
   ///
   /// In pt, this message translates to:
-  /// **'USB / SÉRIE'**
+  /// **'USB / SERIAL'**
   String get connectSectionSerial;
 
   /// No description provided for @connectDeviceBLE.
@@ -2977,7 +2995,7 @@ abstract class AppLocalizations {
   /// No description provided for @connectDeviceUSB.
   ///
   /// In pt, this message translates to:
-  /// **'(Série USB — Companion)'**
+  /// **'(Serial USB — Companion)'**
   String get connectDeviceUSB;
 
   /// No description provided for @connectDeviceKISS.
@@ -3001,55 +3019,55 @@ abstract class AppLocalizations {
   /// No description provided for @connectWebUsbButton.
   ///
   /// In pt, this message translates to:
-  /// **'Ligar via USB (Web Serial)'**
+  /// **'Conectar via USB (Web Serial)'**
   String get connectWebUsbButton;
 
   /// No description provided for @connectWebUsbScanning.
   ///
   /// In pt, this message translates to:
-  /// **'A selecionar porta USB...'**
+  /// **'Selecionando porta USB...'**
   String get connectWebUsbScanning;
 
   /// No description provided for @connectWebUsbHint.
   ///
   /// In pt, this message translates to:
-  /// **'Suportado no Chrome e Edge. O browser mostrará um seletor de portas USB.'**
+  /// **'Suportado no Chrome e Edge. O navegador vai mostrar um seletor de portas USB.'**
   String get connectWebUsbHint;
 
   /// No description provided for @connectWebUsbExpiredMessage.
   ///
   /// In pt, this message translates to:
-  /// **'Porta USB não disponível (página recarregada). Selecione novamente o dispositivo.'**
+  /// **'Porta USB não disponível (página recarregada). Selecione o dispositivo novamente.'**
   String get connectWebUsbExpiredMessage;
 
   /// No description provided for @connectWebUsbAction.
   ///
   /// In pt, this message translates to:
-  /// **'Ligar via USB'**
+  /// **'Conectar via USB'**
   String get connectWebUsbAction;
 
   /// No description provided for @connectStepConnecting.
   ///
   /// In pt, this message translates to:
-  /// **'A ligar...'**
+  /// **'Conectando...'**
   String get connectStepConnecting;
 
   /// No description provided for @connectStepWaiting.
   ///
   /// In pt, this message translates to:
-  /// **'A aguardar rádio...'**
+  /// **'Aguardando rádio...'**
   String get connectStepWaiting;
 
   /// No description provided for @connectStepDeviceInfo.
   ///
   /// In pt, this message translates to:
-  /// **'Informação do dispositivo'**
+  /// **'Informações do dispositivo'**
   String get connectStepDeviceInfo;
 
   /// No description provided for @connectStepContacts.
   ///
   /// In pt, this message translates to:
-  /// **'Contactos'**
+  /// **'Contatos'**
   String get connectStepContacts;
 
   /// No description provided for @connectStepChannels.
@@ -3073,25 +3091,25 @@ abstract class AppLocalizations {
   /// No description provided for @connectBluetoothOffMessage.
   ///
   /// In pt, this message translates to:
-  /// **'O Bluetooth está desligado. Deseja activá-lo para ligar ao rádio MeshCore?'**
+  /// **'O Bluetooth está desligado. Deseja ativá-lo para conectar ao rádio MeshCore?'**
   String get connectBluetoothOffMessage;
 
   /// No description provided for @connectBluetoothEnable.
   ///
   /// In pt, this message translates to:
-  /// **'Activar'**
+  /// **'Ativar'**
   String get connectBluetoothEnable;
 
   /// No description provided for @connectBluetoothDeniedTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Activação do Bluetooth recusada'**
+  /// **'Ativação do Bluetooth recusada'**
   String get connectBluetoothDeniedTitle;
 
   /// No description provided for @connectBluetoothDeniedMessage.
   ///
   /// In pt, this message translates to:
-  /// **'Por favor active o Bluetooth nas Definições do sistema'**
+  /// **'Por favor, ative o Bluetooth nas Configurações do sistema'**
   String get connectBluetoothDeniedMessage;
 
   /// No description provided for @connectBluetoothOff.
@@ -3103,31 +3121,31 @@ abstract class AppLocalizations {
   /// No description provided for @connectBluetoothPermission.
   ///
   /// In pt, this message translates to:
-  /// **'Permissões Bluetooth necessárias para procurar dispositivos'**
+  /// **'Permissões de Bluetooth necessárias para procurar dispositivos'**
   String get connectBluetoothPermission;
 
   /// No description provided for @connectOpenSettings.
   ///
   /// In pt, this message translates to:
-  /// **'Definições'**
+  /// **'Configurações'**
   String get connectOpenSettings;
 
   /// No description provided for @connectFailTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Falha ao ligar ao dispositivo'**
+  /// **'Falha ao conectar ao dispositivo'**
   String get connectFailTitle;
 
   /// No description provided for @connectLastFailTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Falha ao ligar ao último dispositivo'**
+  /// **'Falha ao conectar ao último dispositivo'**
   String get connectLastFailTitle;
 
   /// No description provided for @connectCancelledMessage.
   ///
   /// In pt, this message translates to:
-  /// **'Ligação ao rádio cancelada'**
+  /// **'Conexão com o rádio cancelada'**
   String get connectCancelledMessage;
 
   /// No description provided for @discoverTitle.
@@ -3145,13 +3163,13 @@ abstract class AppLocalizations {
   /// No description provided for @discoverSearchHint.
   ///
   /// In pt, this message translates to:
-  /// **'Procurar contactos descobertos...'**
+  /// **'Procurar contatos descobertos...'**
   String get discoverSearchHint;
 
   /// No description provided for @discoverEmpty.
   ///
   /// In pt, this message translates to:
-  /// **'Nenhum contacto encontrado'**
+  /// **'Nenhum contato encontrado'**
   String get discoverEmpty;
 
   /// No description provided for @discoverEmptyHint.
@@ -3163,31 +3181,31 @@ abstract class AppLocalizations {
   /// No description provided for @discoverNone.
   ///
   /// In pt, this message translates to:
-  /// **'Nenhum contacto descoberto'**
+  /// **'Nenhum contato descoberto'**
   String get discoverNone;
 
   /// No description provided for @discoverNoneHint.
   ///
   /// In pt, this message translates to:
-  /// **'Contactos aparecem enquanto transmitem na rede'**
+  /// **'Contatos aparecem enquanto transmitem na rede'**
   String get discoverNoneHint;
 
   /// No description provided for @discoverCleanTooltip.
   ///
   /// In pt, this message translates to:
-  /// **'Limpar contactos só locais'**
+  /// **'Limpar contatos só locais'**
   String get discoverCleanTooltip;
 
   /// No description provided for @discoverCleanSheetTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Limpar contactos só locais'**
+  /// **'Limpar contatos só locais'**
   String get discoverCleanSheetTitle;
 
   /// No description provided for @discoverCleanSheetSubtitle.
   ///
   /// In pt, this message translates to:
-  /// **'Escolhe quais contactos descobertos remover. Os contactos guardados no rádio são sempre mantidos.'**
+  /// **'Escolha quais contatos descobertos remover. Os contatos salvos no rádio são sempre mantidos.'**
   String get discoverCleanSheetSubtitle;
 
   /// No description provided for @discoverCleanOption48h.
@@ -3217,37 +3235,37 @@ abstract class AppLocalizations {
   /// No description provided for @discoverCleanOptionAll.
   ///
   /// In pt, this message translates to:
-  /// **'Todos os contactos só locais'**
+  /// **'Todos os contatos só locais'**
   String get discoverCleanOptionAll;
 
   /// No description provided for @discoverCleanTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Limpar contactos descobertos?'**
+  /// **'Limpar contatos descobertos?'**
   String get discoverCleanTitle;
 
   /// No description provided for @discoverCleanBody.
   ///
   /// In pt, this message translates to:
-  /// **'Vai remover {n, plural, =1{1 contacto} other{{n} contactos}} que não estão guardados no rádio. Os contactos guardados no rádio são mantidos.'**
+  /// **'Vai remover {n, plural, =1{1 contato} other{{n} contatos}} que não estão salvos no rádio. Os contatos salvos no rádio são mantidos.'**
   String discoverCleanBody(int n);
 
   /// No description provided for @discoverCleanNothing.
   ///
   /// In pt, this message translates to:
-  /// **'Todos os contactos descobertos estão guardados no rádio. Nada para limpar.'**
+  /// **'Todos os contatos descobertos já estão salvos no rádio. Nada para limpar.'**
   String get discoverCleanNothing;
 
   /// No description provided for @discoverCleanDone.
   ///
   /// In pt, this message translates to:
-  /// **'{n, plural, =1{Removido 1 contacto} other{Removidos {n} contactos}}'**
+  /// **'{n, plural, =1{Removido 1 contato} other{Removidos {n} contatos}}'**
   String discoverCleanDone(int n);
 
   /// No description provided for @discoverSaveToRadio.
   ///
   /// In pt, this message translates to:
-  /// **'Guardar no rádio'**
+  /// **'Salvar no rádio'**
   String get discoverSaveToRadio;
 
   /// No description provided for @discoverSendMessage.
@@ -3265,7 +3283,7 @@ abstract class AppLocalizations {
   /// No description provided for @discoverAddAndSave.
   ///
   /// In pt, this message translates to:
-  /// **'Adicionar e guardar'**
+  /// **'Adicionar e salvar'**
   String get discoverAddAndSave;
 
   /// No description provided for @discoverAnnouncedName.
@@ -3379,19 +3397,19 @@ abstract class AppLocalizations {
   /// No description provided for @appsQrSubtitle.
   ///
   /// In pt, this message translates to:
-  /// **'Digitalizar código QR'**
+  /// **'Escanear código QR'**
   String get appsQrSubtitle;
 
   /// No description provided for @mapNoGps.
   ///
   /// In pt, this message translates to:
-  /// **'Sem dados GPS. Toca em \"Localizar\" ou aguarda contactos com coordenadas'**
+  /// **'Sem dados de GPS. Toque em \"Localizar\" ou aguarde contatos com coordenadas'**
   String get mapNoGps;
 
   /// No description provided for @mapShareMap.
   ///
   /// In pt, this message translates to:
-  /// **'Partilhar mapa'**
+  /// **'Compartilhar mapa'**
   String get mapShareMap;
 
   /// No description provided for @mapViewAll.
@@ -3403,7 +3421,7 @@ abstract class AppLocalizations {
   /// No description provided for @mapCenterMyPosition.
   ///
   /// In pt, this message translates to:
-  /// **'Centrar na minha posição'**
+  /// **'Centralizar na minha posição'**
   String get mapCenterMyPosition;
 
   /// No description provided for @mapGetGps.
@@ -3415,7 +3433,7 @@ abstract class AppLocalizations {
   /// No description provided for @mapLocationDisabled.
   ///
   /// In pt, this message translates to:
-  /// **'Serviço de localização desactivado'**
+  /// **'Serviço de localização desativado'**
   String get mapLocationDisabled;
 
   /// No description provided for @mapLocationDenied.
@@ -3451,7 +3469,7 @@ abstract class AppLocalizations {
   /// No description provided for @mapShareError.
   ///
   /// In pt, this message translates to:
-  /// **'Erro ao partilhar o mapa'**
+  /// **'Erro ao compartilhar o mapa'**
   String get mapShareError;
 
   /// No description provided for @mapNodesAtLocation.
@@ -3517,13 +3535,13 @@ abstract class AppLocalizations {
   /// No description provided for @mapLegendYou.
   ///
   /// In pt, this message translates to:
-  /// **'Tu'**
+  /// **'Você'**
   String get mapLegendYou;
 
   /// No description provided for @mapAttribution.
   ///
   /// In pt, this message translates to:
-  /// **'MeshCore Portugal'**
+  /// **'MeshCore Brasil'**
   String get mapAttribution;
 
   /// No description provided for @mapAttributionOSM.
@@ -3559,7 +3577,7 @@ abstract class AppLocalizations {
   /// No description provided for @privateTracingRoute.
   ///
   /// In pt, this message translates to:
-  /// **'A traçar rota para {name}'**
+  /// **'Traçando rota para {name}'**
   String privateTracingRoute(String name);
 
   /// No description provided for @privateRouteFailed.
@@ -3571,7 +3589,7 @@ abstract class AppLocalizations {
   /// No description provided for @privateRouteNoResponse.
   ///
   /// In pt, this message translates to:
-  /// **'Sem resposta à rota — tente novamente'**
+  /// **'Sem resposta da rota — tente novamente'**
   String get privateRouteNoResponse;
 
   /// No description provided for @privateRouteFound.
@@ -3583,7 +3601,7 @@ abstract class AppLocalizations {
   /// No description provided for @privateDirectRoute.
   ///
   /// In pt, this message translates to:
-  /// **'Rota directa (sem repetidores)'**
+  /// **'Rota direta (sem repetidores)'**
   String get privateDirectRoute;
 
   /// No description provided for @privateReceivedOnRadio.
@@ -3619,13 +3637,13 @@ abstract class AppLocalizations {
   /// No description provided for @privateManagePath.
   ///
   /// In pt, this message translates to:
-  /// **'Gerir caminho'**
+  /// **'Gerenciar caminho'**
   String get privateManagePath;
 
   /// No description provided for @privateContactLabel.
   ///
   /// In pt, this message translates to:
-  /// **'Contacto'**
+  /// **'Contato'**
   String get privateContactLabel;
 
   /// No description provided for @qrTitle.
@@ -3691,19 +3709,19 @@ abstract class AppLocalizations {
   /// No description provided for @radioSettingsContacts.
   ///
   /// In pt, this message translates to:
-  /// **'Contactos'**
+  /// **'Contatos'**
   String get radioSettingsContacts;
 
   /// No description provided for @radioSettingsDiscovered.
   ///
   /// In pt, this message translates to:
-  /// **'Contactos locais'**
+  /// **'Contatos locais'**
   String get radioSettingsDiscovered;
 
   /// No description provided for @radioSettingsAppVersion.
   ///
   /// In pt, this message translates to:
-  /// **'Versão da App'**
+  /// **'Versão do App'**
   String get radioSettingsAppVersion;
 
   /// No description provided for @radioSettingsLoRa.
@@ -3727,7 +3745,7 @@ abstract class AppLocalizations {
   /// No description provided for @radioSettingsFrequencyHint.
   ///
   /// In pt, this message translates to:
-  /// **'Ex: 868.1250'**
+  /// **'Ex: 923.1250'**
   String get radioSettingsFrequencyHint;
 
   /// No description provided for @radioSettingsBandwidth.
@@ -3769,7 +3787,7 @@ abstract class AppLocalizations {
   /// No description provided for @radioSettingsFrequencyRequired.
   ///
   /// In pt, this message translates to:
-  /// **'Insere a frequência'**
+  /// **'Informe a frequência'**
   String get radioSettingsFrequencyRequired;
 
   /// No description provided for @radioSettingsFrequencyInvalid.
@@ -3781,25 +3799,25 @@ abstract class AppLocalizations {
   /// No description provided for @radioSettingsBandwidthRequired.
   ///
   /// In pt, this message translates to:
-  /// **'Selecciona a largura de banda'**
+  /// **'Selecione a largura de banda'**
   String get radioSettingsBandwidthRequired;
 
   /// No description provided for @radioSettingsSFRequired.
   ///
   /// In pt, this message translates to:
-  /// **'Selecciona o spreading factor'**
+  /// **'Selecione o spreading factor'**
   String get radioSettingsSFRequired;
 
   /// No description provided for @radioSettingsCRRequired.
   ///
   /// In pt, this message translates to:
-  /// **'Selecciona o coding rate'**
+  /// **'Selecione o coding rate'**
   String get radioSettingsCRRequired;
 
   /// No description provided for @radioSettingsPowerRequired.
   ///
   /// In pt, this message translates to:
-  /// **'Insere a potência'**
+  /// **'Informe a potência'**
   String get radioSettingsPowerRequired;
 
   /// No description provided for @radioSettingsPowerInvalid.
@@ -3811,13 +3829,13 @@ abstract class AppLocalizations {
   /// No description provided for @radioSettingsActiveConfig.
   ///
   /// In pt, this message translates to:
-  /// **'Configuração Activa'**
+  /// **'Configuração Ativa'**
   String get radioSettingsActiveConfig;
 
   /// No description provided for @radioSettingsSaved.
   ///
   /// In pt, this message translates to:
-  /// **'Configuração guardada'**
+  /// **'Configuração salva'**
   String get radioSettingsSaved;
 
   /// No description provided for @radioSettingsPrivKeyCopied.
@@ -3829,7 +3847,7 @@ abstract class AppLocalizations {
   /// No description provided for @radioSettingsResetValues.
   ///
   /// In pt, this message translates to:
-  /// **'Repor valores actuais'**
+  /// **'Restaurar valores atuais'**
   String get radioSettingsResetValues;
 
   /// No description provided for @radioSettingsExperimentalTitle.
@@ -3841,7 +3859,7 @@ abstract class AppLocalizations {
   /// No description provided for @radioSettingsExperimentalWarning.
   ///
   /// In pt, this message translates to:
-  /// **'Usar com cuidado — estas opções afectam a compatibilidade no ar com outros nós.'**
+  /// **'Use com cuidado — estas opções afetam a compatibilidade no ar com outros nós.'**
   String get radioSettingsExperimentalWarning;
 
   /// No description provided for @radioSettingsPathHashMode.
@@ -3853,7 +3871,7 @@ abstract class AppLocalizations {
   /// No description provided for @radioSettingsPathHashModeDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Número de bytes usados por salto no caminho de encaminhamento. Valores maiores reduzem a probabilidade de colisão entre nós distantes. Requer firmware v1.14.0+. Predefinição: 1 byte.'**
+  /// **'Número de bytes usados por salto no caminho de encaminhamento. Valores maiores reduzem a probabilidade de colisão entre nós distantes. Requer firmware v1.14.0+. Padrão: 1 byte.'**
   String get radioSettingsPathHashModeDesc;
 
   /// No description provided for @radioSettingsPathHashMode1.
@@ -3871,13 +3889,13 @@ abstract class AppLocalizations {
   /// No description provided for @radioSettingsPathHashModeCaptionDefault.
   ///
   /// In pt, this message translates to:
-  /// **'1 byte por salto — predefinição, compatível com todos os firmwares.'**
+  /// **'1 byte por salto — padrão, compatível com todos os firmwares.'**
   String get radioSettingsPathHashModeCaptionDefault;
 
   /// No description provided for @radioSettingsPathHashModeCaptionExperimental.
   ///
   /// In pt, this message translates to:
-  /// **'Experimental — só nós com firmware v10+ encaminham este pacote correctamente.'**
+  /// **'Experimental — só nós com firmware v10+ encaminham este pacote corretamente.'**
   String get radioSettingsPathHashModeCaptionExperimental;
 
   /// No description provided for @radioSettingsPathHashModeUnsupported.
@@ -3889,19 +3907,19 @@ abstract class AppLocalizations {
   /// No description provided for @radioSettingsPathHashModeSaved.
   ///
   /// In pt, this message translates to:
-  /// **'Tamanho do hash actualizado'**
+  /// **'Tamanho do hash atualizado'**
   String get radioSettingsPathHashModeSaved;
 
   /// No description provided for @radioSettingsPathHashModeFailed.
   ///
   /// In pt, this message translates to:
-  /// **'Falha ao actualizar o tamanho do hash'**
+  /// **'Falha ao atualizar o tamanho do hash'**
   String get radioSettingsPathHashModeFailed;
 
   /// No description provided for @radioSettingsAutoAddTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Definições de Contactos'**
+  /// **'Configurações de Contatos'**
   String get radioSettingsAutoAddTitle;
 
   /// No description provided for @radioSettingsAutoAddDesc.
@@ -3913,25 +3931,25 @@ abstract class AppLocalizations {
   /// No description provided for @radioSettingsAutoAddAll.
   ///
   /// In pt, this message translates to:
-  /// **'Auto Adicionar Todos'**
+  /// **'Adicionar Todos Automaticamente'**
   String get radioSettingsAutoAddAll;
 
   /// No description provided for @radioSettingsAutoAddAllDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Quando ativo, todos os adverts recebidos serão adicionados aos contactos.'**
+  /// **'Quando ativo, todos os adverts recebidos serão adicionados aos contatos.'**
   String get radioSettingsAutoAddAllDesc;
 
   /// No description provided for @radioSettingsAutoAddSelected.
   ///
   /// In pt, this message translates to:
-  /// **'Auto Adicionar Selecionados'**
+  /// **'Adicionar Selecionados Automaticamente'**
   String get radioSettingsAutoAddSelected;
 
   /// No description provided for @radioSettingsAutoAddSelectedDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Quando ativo, apenas os tipos de contactos selecionados abaixo serão auto adicionados.'**
+  /// **'Quando ativo, apenas os tipos de contatos selecionados abaixo serão adicionados automaticamente.'**
   String get radioSettingsAutoAddSelectedDesc;
 
   /// No description provided for @radioSettingsAutoAddCompanion.
@@ -3961,25 +3979,25 @@ abstract class AppLocalizations {
   /// No description provided for @radioSettingsOverwriteOldest.
   ///
   /// In pt, this message translates to:
-  /// **'Sobrescrever Mais Antigo'**
+  /// **'Sobrescrever o Mais Antigo'**
   String get radioSettingsOverwriteOldest;
 
   /// No description provided for @radioSettingsOverwriteOldestDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Quando ativo, os contactos mais antigos sem favorito são substituídos por novos quando a lista está cheia.'**
+  /// **'Quando ativo, os contatos mais antigos sem favorito são substituídos por novos quando a lista está cheia.'**
   String get radioSettingsOverwriteOldestDesc;
 
   /// No description provided for @radioSettingsAutoAddMaxHops.
   ///
   /// In pt, this message translates to:
-  /// **'Saltos Máximos de Auto Adição'**
+  /// **'Saltos Máximos para Adição Automática'**
   String get radioSettingsAutoAddMaxHops;
 
   /// No description provided for @radioSettingsAutoAddMaxHopsDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Os contactos só serão auto adicionados se o caminho do advert tiver o mesmo ou menos saltos que o limite. Deixe em branco para sem limite.'**
+  /// **'Os contatos só serão adicionados automaticamente se o caminho do advert tiver o mesmo número de saltos ou menos que o limite. Deixe em branco para sem limite.'**
   String get radioSettingsAutoAddMaxHopsDesc;
 
   /// No description provided for @radioSettingsAutoAddMaxHopsHint.
@@ -3997,7 +4015,7 @@ abstract class AppLocalizations {
   /// No description provided for @radioSettingsPullToRefreshDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Quando ativo, pode deslizar para baixo para atualizar a lista de contactos.'**
+  /// **'Quando ativo, você pode deslizar para baixo para atualizar a lista de contatos.'**
   String get radioSettingsPullToRefreshDesc;
 
   /// No description provided for @radioSettingsShowPublicKeys.
@@ -4009,7 +4027,7 @@ abstract class AppLocalizations {
   /// No description provided for @radioSettingsShowPublicKeysDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Quando ativo, as chaves públicas serão mostradas na lista de contactos.'**
+  /// **'Quando ativo, as chaves públicas serão mostradas na lista de contatos.'**
   String get radioSettingsShowPublicKeysDesc;
 
   /// No description provided for @radioSettingsBandPresetsTitle.
@@ -4027,37 +4045,37 @@ abstract class AppLocalizations {
   /// No description provided for @roomJoinInstruction.
   ///
   /// In pt, this message translates to:
-  /// **'Esta sala pode requerer uma palavra-passe. Deixe em branco se for pública.'**
+  /// **'Esta sala pode exigir uma senha. Deixe em branco se for pública.'**
   String get roomJoinInstruction;
 
   /// No description provided for @roomPasswordLabel.
   ///
   /// In pt, this message translates to:
-  /// **'Palavra-passe (opcional)'**
+  /// **'Senha (opcional)'**
   String get roomPasswordLabel;
 
   /// No description provided for @roomPasswordHint.
   ///
   /// In pt, this message translates to:
-  /// **'Deixar em branco se sem palavra-passe'**
+  /// **'Deixe em branco se não houver senha'**
   String get roomPasswordHint;
 
   /// No description provided for @roomJoinFailed.
   ///
   /// In pt, this message translates to:
-  /// **'Falhou — verifique a palavra-passe'**
+  /// **'Falhou — verifique a senha'**
   String get roomJoinFailed;
 
   /// No description provided for @roomJoining.
   ///
   /// In pt, this message translates to:
-  /// **'A ligar...'**
+  /// **'Conectando...'**
   String get roomJoining;
 
   /// No description provided for @roomJoinError.
   ///
   /// In pt, this message translates to:
-  /// **'Não foi possível entrar na sala. Verifique a palavra-passe e tente novamente.'**
+  /// **'Não foi possível entrar na sala. Verifique a senha e tente novamente.'**
   String get roomJoinError;
 
   /// No description provided for @roomReplyStrip.
@@ -4069,7 +4087,7 @@ abstract class AppLocalizations {
   /// No description provided for @roomMessageHint.
   ///
   /// In pt, this message translates to:
-  /// **'Mensagem para {name} sala...'**
+  /// **'Mensagem para a sala {name}...'**
   String roomMessageHint(String name);
 
   /// No description provided for @roomMessageFallback.
@@ -4177,7 +4195,7 @@ abstract class AppLocalizations {
   /// No description provided for @rxLogEmptyHint.
   ///
   /// In pt, this message translates to:
-  /// **'Quando a rádio receber tráfego mesh, os pacotes aparecem aqui.'**
+  /// **'Quando o rádio receber tráfego mesh, os pacotes aparecem aqui.'**
   String get rxLogEmptyHint;
 
   /// No description provided for @telemetryBattery.
@@ -4195,13 +4213,13 @@ abstract class AppLocalizations {
   /// No description provided for @telemetryRadioState.
   ///
   /// In pt, this message translates to:
-  /// **'Rádio — Estado'**
+  /// **'Rádio — Status'**
   String get telemetryRadioState;
 
   /// No description provided for @telemetryRadioWaiting.
   ///
   /// In pt, this message translates to:
-  /// **'A aguardar estatísticas do rádio...'**
+  /// **'Aguardando estatísticas do rádio...'**
   String get telemetryRadioWaiting;
 
   /// No description provided for @telemetryRadioRF.
@@ -4213,7 +4231,7 @@ abstract class AppLocalizations {
   /// No description provided for @telemetryRFWaiting.
   ///
   /// In pt, this message translates to:
-  /// **'A aguardar estatísticas de RF...'**
+  /// **'Aguardando estatísticas de RF...'**
   String get telemetryRFWaiting;
 
   /// No description provided for @telemetryPacketCounters.
@@ -4225,7 +4243,7 @@ abstract class AppLocalizations {
   /// No description provided for @telemetryCountersWaiting.
   ///
   /// In pt, this message translates to:
-  /// **'A aguardar contadores de pacotes...'**
+  /// **'Aguardando contadores de pacotes...'**
   String get telemetryCountersWaiting;
 
   /// No description provided for @telemetrySensors.
@@ -4435,7 +4453,7 @@ abstract class AppLocalizations {
   /// No description provided for @eventChannelSheetDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Adiciona o canal ao rádio ligado ou consulte os dados manualmente.'**
+  /// **'Adiciona o canal ao rádio conectado ou consulte os dados manualmente.'**
   String get eventChannelSheetDesc;
 
   /// No description provided for @eventChannelAdded.
@@ -4465,7 +4483,7 @@ abstract class AppLocalizations {
   /// No description provided for @plan333EventActive.
   ///
   /// In pt, this message translates to:
-  /// **'● EVENTO ACTIVO'**
+  /// **'● EVENTO ATIVO'**
   String get plan333EventActive;
 
   /// No description provided for @plan333PhaseCQ.
@@ -4525,7 +4543,7 @@ abstract class AppLocalizations {
   /// No description provided for @plan333CityHint.
   ///
   /// In pt, this message translates to:
-  /// **'Ex: Lisboa'**
+  /// **'Ex: São Paulo'**
   String get plan333CityHint;
 
   /// No description provided for @plan333Locality.
@@ -4537,7 +4555,7 @@ abstract class AppLocalizations {
   /// No description provided for @plan333LocalityHint.
   ///
   /// In pt, this message translates to:
-  /// **'Ex: Olaias'**
+  /// **'Ex: Pinheiros'**
   String get plan333LocalityHint;
 
   /// No description provided for @plan333AutoSend.
@@ -4603,7 +4621,7 @@ abstract class AppLocalizations {
   /// No description provided for @plan333AlertDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Alertas 10 e 5 min antes do Mesh 3-3-3 (Sábados 21:00)'**
+  /// **'Alertas 10 e 5 min antes do Mesh 3-3-3 (sábados 21:00)'**
   String get plan333AlertDesc;
 
   /// No description provided for @plan333AlertsActive.
@@ -4621,7 +4639,7 @@ abstract class AppLocalizations {
   /// No description provided for @plan333ShareLog.
   ///
   /// In pt, this message translates to:
-  /// **'Partilhar log'**
+  /// **'Compartilhar log'**
   String get plan333ShareLog;
 
   /// No description provided for @plan333ClearLog.
@@ -4645,7 +4663,7 @@ abstract class AppLocalizations {
   /// No description provided for @plan333ClearQslContent.
   ///
   /// In pt, this message translates to:
-  /// **'Todas as estações registadas serão apagadas.'**
+  /// **'Todas as estações registradas serão apagadas.'**
   String get plan333ClearQslContent;
 
   /// No description provided for @plan333AddQslTitle.
@@ -4687,7 +4705,7 @@ abstract class AppLocalizations {
   /// No description provided for @plan333LocationHint.
   ///
   /// In pt, this message translates to:
-  /// **'ex: Tomar'**
+  /// **'ex: Campinas'**
   String get plan333LocationHint;
 
   /// No description provided for @plan333NotesLabel.
@@ -4699,7 +4717,7 @@ abstract class AppLocalizations {
   /// No description provided for @plan333AbortAutoSend.
   ///
   /// In pt, this message translates to:
-  /// **'Abortar auto-envio'**
+  /// **'Abortar envio automático'**
   String get plan333AbortAutoSend;
 
   /// No description provided for @plan333AbortedMessage.
@@ -4729,7 +4747,7 @@ abstract class AppLocalizations {
   /// No description provided for @plan333RadioOff.
   ///
   /// In pt, this message translates to:
-  /// **'Rádio desligado — não é possível enviar'**
+  /// **'Rádio desconectado — não é possível enviar'**
   String get plan333RadioOff;
 
   /// No description provided for @plan333ChannelSheetTitle.
@@ -4741,7 +4759,7 @@ abstract class AppLocalizations {
   /// No description provided for @plan333ChannelSheetDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Adiciona o canal ao rádio ligado ou consulte os dados manualmente.'**
+  /// **'Adiciona o canal ao rádio conectado ou consulte os dados manualmente.'**
   String get plan333ChannelSheetDesc;
 
   /// No description provided for @plan333ChannelAdded.
@@ -4807,7 +4825,7 @@ abstract class AppLocalizations {
   /// No description provided for @topologyTabTimeline.
   ///
   /// In pt, this message translates to:
-  /// **'Cronologia'**
+  /// **'Linha do Tempo'**
   String get topologyTabTimeline;
 
   /// No description provided for @topologyEmptyTitle.
@@ -4819,7 +4837,7 @@ abstract class AppLocalizations {
   /// No description provided for @topologyEmptyHint.
   ///
   /// In pt, this message translates to:
-  /// **'Liga-te a um rádio para\nvisualizar a rede'**
+  /// **'Conecte-se a um rádio para\nvisualizar a rede'**
   String get topologyEmptyHint;
 
   /// No description provided for @topologySelf.
@@ -4831,7 +4849,7 @@ abstract class AppLocalizations {
   /// No description provided for @topologyResetView.
   ///
   /// In pt, this message translates to:
-  /// **'Repor vista'**
+  /// **'Redefinir visualização'**
   String get topologyResetView;
 
   /// No description provided for @topologySnrGood.
@@ -4903,7 +4921,7 @@ abstract class AppLocalizations {
   /// No description provided for @topologyFilterRecent.
   ///
   /// In pt, this message translates to:
-  /// **'Mostrar apenas contactos no rádio'**
+  /// **'Mostrar apenas contatos no rádio'**
   String get topologyFilterRecent;
 
   /// No description provided for @topologyFilterAll.
@@ -4963,7 +4981,7 @@ abstract class AppLocalizations {
   /// No description provided for @topologyPathsEmptyHint.
   ///
   /// In pt, this message translates to:
-  /// **'Faz um trace a partir de um\ncontacto para ver o caminho'**
+  /// **'Faça um trace a partir de um\ncontato para ver o caminho'**
   String get topologyPathsEmptyHint;
 
   /// No description provided for @topologyPathsCount.
@@ -4975,7 +4993,7 @@ abstract class AppLocalizations {
   /// No description provided for @repeaterTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Gerir Repetidor'**
+  /// **'Gerenciar Repetidor'**
   String get repeaterTitle;
 
   /// No description provided for @repeaterConfig.
@@ -5011,25 +5029,25 @@ abstract class AppLocalizations {
   /// No description provided for @repeaterForwardingDesc.
   ///
   /// In pt, this message translates to:
-  /// **'Activa ou desactiva o reencaminhamento de pacotes'**
+  /// **'Ativa ou desativa o encaminhamento de pacotes'**
   String get repeaterForwardingDesc;
 
   /// No description provided for @repeaterAdvertInterval.
   ///
   /// In pt, this message translates to:
-  /// **'Intervalo anúncio local'**
+  /// **'Intervalo de anúncio local'**
   String get repeaterAdvertInterval;
 
   /// No description provided for @repeaterAdvertZeroHop.
   ///
   /// In pt, this message translates to:
-  /// **'Anúncio Auto (Zero Hop)'**
+  /// **'Anúncio Automático (Zero Hop)'**
   String get repeaterAdvertZeroHop;
 
   /// No description provided for @repeaterAdvertFlood.
   ///
   /// In pt, this message translates to:
-  /// **'Anúncio Auto (Flood)'**
+  /// **'Anúncio Automático (Flood)'**
   String get repeaterAdvertFlood;
 
   /// No description provided for @repeaterIntervalMinutes.
@@ -5047,7 +5065,7 @@ abstract class AppLocalizations {
   /// No description provided for @repeaterMinimalTrafficHint.
   ///
   /// In pt, this message translates to:
-  /// **'Para usar tráfego mínimo na rede, use os ícones de refrescar para pedir apenas a informação que precisa.'**
+  /// **'Para usar tráfego mínimo na rede, use os ícones de atualizar para pedir apenas a informação que você precisa.'**
   String get repeaterMinimalTrafficHint;
 
   /// No description provided for @repeaterValueNotLoaded.
@@ -5077,13 +5095,13 @@ abstract class AppLocalizations {
   /// No description provided for @repeaterNoStats.
   ///
   /// In pt, this message translates to:
-  /// **'Autentique-se e prima \"Actualizar\" para obter as estatísticas.'**
+  /// **'Autentique-se e toque em \"Atualizar\" para obter as estatísticas.'**
   String get repeaterNoStats;
 
   /// No description provided for @repeaterFetchStats.
   ///
   /// In pt, this message translates to:
-  /// **'Actualizar'**
+  /// **'Atualizar'**
   String get repeaterFetchStats;
 
   /// No description provided for @repeaterAuthenticated.
@@ -5095,7 +5113,7 @@ abstract class AppLocalizations {
   /// No description provided for @repeaterTabStatus.
   ///
   /// In pt, this message translates to:
-  /// **'Estado'**
+  /// **'Status'**
   String get repeaterTabStatus;
 
   /// No description provided for @repeaterTabCommandLine.
@@ -5107,7 +5125,7 @@ abstract class AppLocalizations {
   /// No description provided for @repeaterTabSettings.
   ///
   /// In pt, this message translates to:
-  /// **'Definições'**
+  /// **'Configurações'**
   String get repeaterTabSettings;
 
   /// No description provided for @repeaterCmdHint.
@@ -5119,7 +5137,7 @@ abstract class AppLocalizations {
   /// No description provided for @repeaterCmdEmpty.
   ///
   /// In pt, this message translates to:
-  /// **'Sem comandos enviados. Use o campo abaixo para enviar comandos CLI directamente.'**
+  /// **'Nenhum comando enviado. Use o campo abaixo para enviar comandos CLI diretamente.'**
   String get repeaterCmdEmpty;
 
   /// No description provided for @repeaterCmdClear.
@@ -5137,7 +5155,7 @@ abstract class AppLocalizations {
   /// No description provided for @repeaterMenuClearHistory.
   ///
   /// In pt, this message translates to:
-  /// **'Apagar Histórico de Comandos'**
+  /// **'Excluir Histórico de Comandos'**
   String get repeaterMenuClearHistory;
 
   /// No description provided for @repeaterHelpTitle.
@@ -5155,7 +5173,7 @@ abstract class AppLocalizations {
   /// No description provided for @repeaterHelpFirmwareNote.
   ///
   /// In pt, this message translates to:
-  /// **'Alguns comandos requerem firmware recente.'**
+  /// **'Alguns comandos exigem firmware recente.'**
   String get repeaterHelpFirmwareNote;
 
   /// No description provided for @repeaterHelpSearchHint.
@@ -5173,13 +5191,13 @@ abstract class AppLocalizations {
   /// No description provided for @dataExportContactsTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Contactos'**
+  /// **'Contatos'**
   String get dataExportContactsTitle;
 
   /// No description provided for @dataExportContactsDesc.
   ///
   /// In pt, this message translates to:
-  /// **'{count} contactos guardados'**
+  /// **'{count} contatos salvos'**
   String dataExportContactsDesc(int count);
 
   /// No description provided for @dataExportMessagesTitle.
@@ -5203,19 +5221,19 @@ abstract class AppLocalizations {
   /// No description provided for @dataExportKmlDesc.
   ///
   /// In pt, this message translates to:
-  /// **'{count} contactos com GPS'**
+  /// **'{count} contatos com GPS'**
   String dataExportKmlDesc(int count);
 
   /// No description provided for @dataExportNote.
   ///
   /// In pt, this message translates to:
-  /// **'Os ficheiros são exportados diretamente para o menu de partilha.\nNenhum dado sai do dispositivo sem a tua confirmação.'**
+  /// **'Os arquivos são exportados diretamente para o menu de compartilhamento.\nNenhum dado sai do dispositivo sem a sua confirmação.'**
   String get dataExportNote;
 
   /// No description provided for @dataExportNoContacts.
   ///
   /// In pt, this message translates to:
-  /// **'Sem contactos para exportar'**
+  /// **'Sem contatos para exportar'**
   String get dataExportNoContacts;
 
   /// No description provided for @dataExportNoMessages.
@@ -5227,7 +5245,7 @@ abstract class AppLocalizations {
   /// No description provided for @dataExportNoGps.
   ///
   /// In pt, this message translates to:
-  /// **'Sem contactos com coordenadas GPS'**
+  /// **'Sem contatos com coordenadas GPS'**
   String get dataExportNoGps;
 
   /// No description provided for @dataExportFailed.
@@ -5245,7 +5263,7 @@ abstract class AppLocalizations {
   /// No description provided for @appsDataExportSubtitle.
   ///
   /// In pt, this message translates to:
-  /// **'Exporta contactos, mensagens e dados de mapa'**
+  /// **'Exporta contatos, mensagens e dados de mapa'**
   String get appsDataExportSubtitle;
 }
 

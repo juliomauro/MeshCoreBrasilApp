@@ -13,14 +13,20 @@ allprojects {
 // target Y" whenever a plugin's precompiled stdlib target drifts ahead of
 // the project-wide default.
 subprojects {
-    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
-        kotlinOptions {
-            jvmTarget = "17"
+    // afterEvaluate so this runs after the subproject's own build.gradle
+    // (e.g. home_widget pins Java 1.8 inline in its android{} block) has
+    // already set its defaults — otherwise those later-evaluated, more
+    // specific settings would win over ours.
+    afterEvaluate {
+        tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+            compilerOptions {
+                jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
+            }
         }
-    }
-    tasks.withType<JavaCompile>().configureEach {
-        sourceCompatibility = JavaVersion.VERSION_17.toString()
-        targetCompatibility = JavaVersion.VERSION_17.toString()
+        tasks.withType<JavaCompile>().configureEach {
+            sourceCompatibility = JavaVersion.VERSION_17.toString()
+            targetCompatibility = JavaVersion.VERSION_17.toString()
+        }
     }
 }
 

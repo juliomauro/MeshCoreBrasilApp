@@ -12,7 +12,7 @@ enum GpsSharingMode {
   /// No sharing. Toggling here also clears the radio's stored coords (0,0).
   off,
 
-  /// Only share when the user explicitly taps "Partilhar agora" / map FAB.
+  /// Only share when the user explicitly taps "Compartilhar agora" / map FAB.
   manual,
 
   /// Background timer pushes the phone GPS on every [GpsSharingSettings.intervalMinutes].

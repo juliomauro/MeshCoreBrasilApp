@@ -6,8 +6,8 @@ import 'package:meshcorebrasilapp/main.dart';
 
 void main() {
   testWidgets('App smoke test', (WidgetTester tester) async {
-    await tester.pumpWidget(const ProviderScope(child: McAppPt()));
+    await tester.pumpWidget(const ProviderScope(child: McAppBr()));
     // Just verify the app builds and renders without crashing.
-    expect(find.byType(McAppPt), findsOneWidget);
+    expect(find.byType(McAppBr), findsOneWidget);
   });
 }

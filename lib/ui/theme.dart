@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-/// MeshCore PT app theme — matches the official meshcore.pt website.
+/// MeshCore Brasil app theme.
 ///
-/// The brand palette is fixed (near-black background, orange accent) but the
+/// The brand palette is fixed (near-black background, blue accent) but the
 /// user can override:
 ///   * the seed/accent colour via [build] `accent` parameter
 ///   * the brightness via [build] `brightness` parameter
 ///
-/// The static [AppTheme.primary] colour is the immutable brand orange and is
+/// The static [AppTheme.primary] colour is the immutable brand blue and is
 /// referenced directly by a few brand splashes (logo background, repeater
 /// badge, etc.). User customisation only affects the Material `colorScheme`.
 class AppTheme {
-  // ---- Brand colours (from meshcore.pt) ----
-  static const primary = Color(0xFFFF6B00); // orange accent (brand)
-  static const primaryVariant = Color(0xFFFF8C38); // lighter orange
+  // ---- Brand colours ----
+  static const primary = Color(0xFF2F80ED); // blue accent (brand)
+  static const primaryVariant = Color(0xFF5B9EF5); // lighter blue
 
   // Dark surfaces
   static const _darkBackground = Color(0xFF111111);
@@ -60,8 +60,18 @@ class AppTheme {
       brightness: Brightness.dark,
       primary: acc,
       onPrimary: Colors.white,
-      primaryContainer: Color.alphaBlend(acc.withAlpha(40), _darkSurface),
-      onPrimaryContainer: acc,
+      // Blue reads less saturated than the old orange brand accent against a
+      // near-black surface at the same blend strength, so it needs a
+      // stronger mix here to stay visible (e.g. the "own message" chat
+      // bubble background, which uses primaryContainer).
+      primaryContainer: Color.alphaBlend(acc.withAlpha(85), _darkSurface),
+      // Lightened towards white instead of the raw accent: small text/icons
+      // drawn in onPrimaryContainer (e.g. the "last repeater" chip inside an
+      // outgoing chat bubble) sit on a chip background that's ALSO tinted
+      // with acc, so same-hue-on-same-hue reads as low contrast — this is
+      // most visible with blue, which has lower perceived luminance than
+      // the old brand orange at the same saturation.
+      onPrimaryContainer: Color.lerp(acc, Colors.white, 0.45)!,
       secondary: const Color(0xFF14B8A6),
       onSecondary: Colors.white,
       secondaryContainer: const Color(0xFF0D3330),
