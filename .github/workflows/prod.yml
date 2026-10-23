@@ -1,9 +1,12 @@
 name: Production track release
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+  # Was `push: branches: [main]` upstream, where every merge to main is a
+  # gated production release. We push to main constantly during active
+  # development and don't have Play Store secrets configured yet, so this
+  # fired (and failed) on every single push. Switch back to push-triggered
+  # once Play Store publishing is actually set up for this fork.
 
 permissions:
   contents: write
